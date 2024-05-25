@@ -4,31 +4,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Sectionhead from "../components/SectionHead.astro";
 ---
 
-<div class="">
-  <BaseLayout title="About Us">
-    <Containter>
-      <Sectionhead>
-        <Fragment slot="title">About Us</Fragment>
-        <Fragment slot="desc">This is what we are about.</Fragment>
-      </Sectionhead>
-      <h1 class="text-gray-900 dark:text-white">About Page</h1>
-      <div class="text-gray-600 dark:text-gray-300">
-        <main>
-          <p>
-            main Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-            ultricies leo integer malesuada nunc vel risus commodo viverra.
-            Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi
-            quis eleifend quam adipiscing. In hac habitasse platea dictumst
-            vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-            fames ac turpis egestas. Eget magna fermentum iaculis eu non diam
-            phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
-            Habitasse platea dictumst quisque sagittis. Integer quis auctor elit
-            sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-          </p>
-        </main>
+<BaseLayout title="About Us">
+  <Containter>
+    <Sectionhead>
+      <Fragment slot="title">About Us</Fragment>
+      <Fragment slot="desc">This is what we are about.</Fragment>
+    </Sectionhead>
+    <h1 class="text-gray-900 dark:text-white">About Page</h1>
+    <div class="text-gray-600 dark:text-gray-300">
+      <main>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          main Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
           ultricies leo integer malesuada nunc vel risus commodo viverra.
           Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
@@ -39,7 +25,19 @@ import Sectionhead from "../components/SectionHead.astro";
           dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
           Dictumst quisque sagittis purus sit amet.
         </p>
-      </div>
-    </Containter>
-  </BaseLayout>
-</div>
+      </main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+        integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+        turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+        adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
+        sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget
+        magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius
+        sit amet mattis vulputate enim. Habitasse platea dictumst quisque
+        sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque
+        sagittis purus sit amet.
+      </p>
+    </div>
+  </Containter>
+</BaseLayout>
