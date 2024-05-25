@@ -1,0 +1,47 @@
+---
+import Containter from "../components/Containter.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/heros/Hero.astro";
+import Sectionhead from "../components/SectionHead.astro";
+import Faq from "../components/misc/Faq.astro";
+import Feature1 from "../components/misc/Feature1.astro";
+import Feature2 from "../components/misc/Feature2.astro";
+import Carousel from "../components/misc/Carousel.astro";
+---
+
+<BaseLayout title="YCWD | Home">
+  <Hero />
+  <Containter class="text-gray-600 dark:text-gray-300">
+    <Sectionhead>
+      <Fragment slot="title">Home Page</Fragment>
+      <Fragment slot="desc">Magical Subtitle</Fragment>
+    </Sectionhead>
+    <section class="bg-white pt-4 dark:bg-gray-800" id="intro">
+      <div
+        class="mx-auto max-w-screen-xl gap-16 px-4 py-8 font-light text-gray-500 dark:text-gray-400 sm:text-lg lg:px-6 lg:py-16"
+      >
+        <h2
+          class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        >
+          Welcome weary traveler
+        </h2>
+        <p class="mb-4">
+          main Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+          ultricies leo integer malesuada nunc vel risus commodo viverra.
+          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
+          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
+          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
+          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
+          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
+          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
+          Dictumst quisque sagittis purus sit amet.
+        </p>
+      </div>
+      <Carousel />
+      <Feature1 />
+      <Feature2 />
+      <Faq />
+    </section>
+  </Containter>
+</BaseLayout>
