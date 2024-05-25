@@ -4,6 +4,7 @@ import Header from "../components/headers/Header1.astro";
 import Footer from "../components/footers/Footer2.astro";
 
 const { title, description } = Astro.props;
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -13,10 +14,11 @@ const { title, description } = Astro.props;
   </head>
   <body class="bg-white dark:bg-gray-800">
     <div class="min-h-screen">
-      <Footer />
-      <!-- <Header /> -->
+      <Header />
       <slot />
-      <div class="sticky top-[100vh]"></div>
+      <div class="sticky top-[100vh]">
+        <Footer />
+      </div>
     </div>
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
