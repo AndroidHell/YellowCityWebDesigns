@@ -1,5 +1,8 @@
 # tomorrow
 
+- fix side drawer issue on netlify
+- fix social card shit
+- check sitemap and robots stuff
 - add font lato, something else
 - fix css bullshit
 - figure out container, fragment, etc
