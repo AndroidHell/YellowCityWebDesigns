@@ -13,11 +13,10 @@ const { title, description } = Astro.props;
   </head>
   <body class="bg-white dark:bg-gray-800">
     <div class="min-h-screen">
+      <Footer />
       <!-- <Header /> -->
       <slot />
-      <div class="sticky top-[100vh]">
-        <Footer />
-      </div>
+      <div class="sticky top-[100vh]"></div>
     </div>
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
