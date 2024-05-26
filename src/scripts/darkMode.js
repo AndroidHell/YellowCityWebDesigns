@@ -1,14 +1,15 @@
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (
-  localStorage.getItem("color-theme") === "light" ||
+  localStorage.getItem("color-theme") === "dark" ||
   (!("color-theme" in localStorage) &&
-    !window.matchMedia("(prefers-color-scheme: dark)").matches)
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
-  document.documentElement.classList.remove("dark"); // Start with light mode
+  document.documentElement.classList.add("dark");
 } else {
-  document.documentElement.classList.add("dark"); // Switch to dark mode
+  document.documentElement.classList.remove("dark");
 }
 
+// theme toggle logic
 var themeToggleDarkIcons = document.querySelectorAll(
   "#theme-toggle-dark-icon, #theme-toggle-dark-icon-drawer",
 );

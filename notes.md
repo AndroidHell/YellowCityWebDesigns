@@ -1,6 +1,6 @@
 # tomorrow
 
-- fix side drawer issue on netlify
+- probably switch to astro dark mode handling since flowbite isn't working
 - fix social card shit
 - check sitemap and robots stuff
 - add font lato, something else
