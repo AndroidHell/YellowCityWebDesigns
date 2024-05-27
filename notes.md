@@ -1,30 +1,23 @@
-# tomorrow
+# current
 
-- probably switch to astro dark mode handling since flowbite isn't working
+- ~~set up contact page~~
+  - add verbiage and maybe other fluff
 - fix social card shit
 - check sitemap and robots stuff
 - add font lato, something else
-- fix css bullshit
 - figure out container, fragment, etc
 - add alternative cta with business number
 
-## current
+## future
 
+- maybe set up secondary colors
 - add decap cms support
-- do initial commit and push to netlify
 - do I want to set up bitbucket and new email shit?
 - start working on page components
 - ~~figure out component dodging for navbar~~
 - ~~migrate all data objects to a single file~~
 - ~~figure out rtl and lt~~
-- ~~figure out styling~~
-  - ~~theme engine~~
-    - ~~make theme engine based on landing page template~~
-    - ~~redo current components with new theme stuff~~
-
-## future
-
-- work on Razorback template
+- work on Razorback template - possibly on vacay
 - more to come
 
 ### colors

@@ -55,10 +55,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     </style>
   </head>
 
-  <body>
+  <body
+    class="mt-24 bg-white text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+  >
     <Header />
     <main>
-      <article>
+      <article class="mb-12">
         <div class="hero-image">
           {
             heroImage && (
@@ -78,7 +80,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                 )
               }
             </div>
-            <h1>{title}</h1>
+            <h1 class="text-gray-900 dark:text-white">{title}</h1>
             <hr />
           </div>
           <slot />
