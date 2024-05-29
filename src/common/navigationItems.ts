@@ -14,10 +14,13 @@ export const navigationItems = [
     path: "#",
     icon: "components",
     children: [
-      { title: "Headers", path: "#" },
-      { title: "Footers", path: "#" },
-      { title: "Heros", path: "#" },
-      { title: "Misc", path: "#" },
+      {
+        title: "Headers",
+        path: "/componentExamples/headers",
+      },
+      { title: "Footers", path: "/footers" },
+      { title: "Heros", path: "/heros" },
+      { title: "Misc", path: "/misc" },
     ],
   },
 
