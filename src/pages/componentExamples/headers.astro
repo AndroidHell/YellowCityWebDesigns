@@ -1,7 +1,6 @@
 ---
 import Containter from "../../components/Containter.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Sectionhead from "../../components/SectionHead.astro";
 import Header1 from "../componentExamples/headers/header1.astro";
 import Header2 from "../componentExamples/headers/header2.astro";
 import Header3 from "../componentExamples/headers/header3.astro";
@@ -9,14 +8,6 @@ import Header3 from "../componentExamples/headers/header3.astro";
 
 <BaseLayout title="Headers">
   <Containter>
-    <!-- <Sectionhead>
-      <Fragment slot="title">Header Options</Fragment>
-      <Fragment slot="desc">
-        These are a few examples of headers/navbars we have. We are able to
-        adjust according to company branding and preferences.
-      </Fragment>
-    </Sectionhead> -->
-
     <section class="mt-8 bg-white dark:bg-gray-800">
       <div
         class="mx-auto flex max-w-screen-xl flex-col items-center px-4 py-8 sm:py-16 lg:px-6"
@@ -149,7 +140,7 @@ import Header3 from "../componentExamples/headers/header3.astro";
       </div>
     </section>
     <div class="mb-8 mt-8 grid grid-rows-3 gap-12">
-      <div class="">
+      <div>
         <h2
           class="mb-4 text-center text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
@@ -157,8 +148,9 @@ import Header3 from "../componentExamples/headers/header3.astro";
         </h2>
         <Header1 />
         <ul
-          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 md:grid-cols-2"
+          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 text-gray-500 dark:text-gray-400 md:grid-cols-2"
         >
+          <!-- class="text-gray-500 dark:text-gray-400" -->
           <li class="p-2">Elements inside responsive container</li>
           <li class="p-2">Outer margins line up with rest of site content</li>
           <li class="p-2">Responsiveness means header fits all screen sizes</li>
@@ -167,7 +159,7 @@ import Header3 from "../componentExamples/headers/header3.astro";
           </li>
         </ul>
       </div>
-      <div class="">
+      <div>
         <h2
           class="mb-4 text-center text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
@@ -175,7 +167,7 @@ import Header3 from "../componentExamples/headers/header3.astro";
         </h2>
         <Header2 />
         <ul
-          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 md:grid-cols-2"
+          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 text-gray-500 dark:text-gray-400 md:grid-cols-2"
         >
           <li class="p-2">Elements stretch to full witdh of viewport</li>
           <li class="p-2">
@@ -187,7 +179,7 @@ import Header3 from "../componentExamples/headers/header3.astro";
           </li>
         </ul>
       </div>
-      <div class="">
+      <div>
         <h2
           class="mb-4 text-center text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
@@ -195,7 +187,7 @@ import Header3 from "../componentExamples/headers/header3.astro";
         </h2>
         <Header3 />
         <ul
-          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 md:grid-cols-2"
+          class="grid list-inside list-disc grid-cols-1 gap-4 p-4 text-gray-500 dark:text-gray-400 md:grid-cols-2"
         >
           <li class="p-2">Elements stretch to full witdh of viewport</li>
           <li class="p-2">Modern right-side navigation</li>

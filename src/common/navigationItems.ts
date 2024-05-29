@@ -5,9 +5,9 @@ export const navigationItems = [
     icon: "home",
   },
   {
-    title: "Services",
-    path: "/services",
-    icon: "services",
+    title: "Gallery",
+    path: "/gallery",
+    icon: "gallery",
   },
   {
     title: "Components",
@@ -18,9 +18,9 @@ export const navigationItems = [
         title: "Headers",
         path: "/componentExamples/headers",
       },
-      { title: "Footers", path: "/footers" },
-      { title: "Heros", path: "/heros" },
-      { title: "Misc", path: "/misc" },
+      { title: "Footers", path: "/componentExamples/footers" },
+      { title: "Heros", path: "/componentExamples/heros" },
+      { title: "Misc", path: "/componentExamples/misc" },
     ],
   },
 

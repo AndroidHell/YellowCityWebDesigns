@@ -1,12 +1,11 @@
 # current
 
-- ~~set up contact page~~
-  - add verbiage and maybe other fluff
 - fix social card shit
 - check sitemap and robots stuff
-- add font lato, something else
+- add font lato, something else or go back to Inter
 - figure out container, fragment, etc
 - add alternative cta with business number
+- accessability and website score
 
 ## future
 
