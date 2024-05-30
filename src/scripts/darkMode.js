@@ -1,42 +1,49 @@
-var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
-var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+var themeToggleDarkIcons = document.querySelectorAll(
+  "#theme-toggle-dark-icon, #theme-toggle-dark-icon-drawer",
+);
+var themeToggleLightIcons = document.querySelectorAll(
+  "#theme-toggle-light-icon, #theme-toggle-light-icon-drawer",
+);
 
 // Change the icons inside the button based on previous settings
 if (
   localStorage.getItem("color-theme") === "light" ||
   (!("color-theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: light)").matches)
+    !window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
-  themeToggleLightIcon.classList.remove("hidden");
+  themeToggleDarkIcons.forEach((icon) => icon.classList.remove("hidden")); // Show dark mode icon
 } else {
-  themeToggleDarkIcon.classList.remove("hidden");
+  themeToggleLightIcons.forEach((icon) => icon.classList.remove("hidden")); // Show light mode icon
 }
 
-var themeToggleBtn = document.getElementById("theme-toggle");
+var themeToggleBtns = document.querySelectorAll(
+  "#theme-toggle, #theme-toggle-drawer",
+);
 
-themeToggleBtn.addEventListener("click", function () {
-  // toggle icons inside button
-  themeToggleDarkIcon.classList.toggle("hidden");
-  themeToggleLightIcon.classList.toggle("hidden");
+themeToggleBtns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    // toggle icons inside button
+    themeToggleDarkIcons.forEach((icon) => icon.classList.toggle("hidden"));
+    themeToggleLightIcons.forEach((icon) => icon.classList.toggle("hidden"));
 
-  // if set via local storage previously
-  if (localStorage.getItem("color-theme")) {
-    if (localStorage.getItem("color-theme") === "light") {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("color-theme", "dark");
+    // if set via local storage previously
+    if (localStorage.getItem("color-theme")) {
+      if (localStorage.getItem("color-theme") === "dark") {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("color-theme", "light"); // Switch to light mode
+      } else {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("color-theme", "dark"); // Switch to dark mode
+      }
     } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("color-theme", "light");
+      // if NOT set via local storage previously
+      if (document.documentElement.classList.contains("dark")) {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("color-theme", "light"); // Switch to light mode
+      } else {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("color-theme", "dark"); // Switch to dark mode
+      }
     }
-
-    // if NOT set via local storage previously
-  } else {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("color-theme", "light");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("color-theme", "dark");
-    }
-  }
+  });
 });
