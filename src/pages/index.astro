@@ -4,19 +4,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/heros/Hero.astro";
 import Sectionhead from "../components/SectionHead.astro";
 import Faq from "../components/misc/Faq.astro";
-import Feature1 from "../components/misc/Feature1.astro";
-import Feature2 from "../components/misc/Feature2.astro";
-import Carousel from "../components/misc/Carousel.astro";
+import Expose from "../components/misc/Expose.astro";
+import TechFeatures from "../components/misc/TechFeatures.astro";
+import FeatureHead from "../components/misc/FeatureHead.astro";
 ---
 
 <BaseLayout title="YCWD | Home">
   <Hero />
+  <FeatureHead />
   <Containter class="text-gray-600 dark:text-gray-300">
-    <Sectionhead>
+    <!-- <Sectionhead>
       <Fragment slot="title">Home Page</Fragment>
       <Fragment slot="desc">Magical Subtitle</Fragment>
-    </Sectionhead>
-    <section class="bg-white pt-4 dark:bg-gray-800" id="intro">
+    </Sectionhead> -->
+
+    <!-- <section class="bg-white pt-4 dark:bg-gray-800" id="intro">
       <div
         class="mx-auto max-w-screen-xl gap-16 px-4 py-8 font-light text-gray-500 dark:text-gray-400 sm:text-lg lg:px-6 lg:py-16"
       >
@@ -37,11 +39,14 @@ import Carousel from "../components/misc/Carousel.astro";
           dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
           Dictumst quisque sagittis purus sit amet.
         </p>
-      </div>
-      <Carousel />
-      <Feature1 />
-      <Feature2 />
-      <Faq />
-    </section>
+      </div> -->
+    expose
+    <Expose />
+    tech features
+    <TechFeatures />
+    call to action span <br />put faq on about page add <br />maybe a min about? <br
+    /> add pricing somewhere
+    <Faq />
+    <!-- </section> -->
   </Containter>
 </BaseLayout>
