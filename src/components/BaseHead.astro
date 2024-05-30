@@ -68,7 +68,8 @@ const {
   if (
     localStorage.getItem("color-theme") === "dark" ||
     (!("color-theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
+      // remove ! here and in darkMode.js to set dark mode as default
+      !window.matchMedia("(prefers-color-scheme: dark)").matches) //added !
   ) {
     document.documentElement.classList.add("dark");
   } else {

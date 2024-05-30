@@ -9,7 +9,8 @@ var themeToggleLightIcons = document.querySelectorAll(
 if (
   localStorage.getItem("color-theme") === "light" ||
   (!("color-theme" in localStorage) &&
-    !window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // remove ! here and in BaseKead.astro to set dark mode as default
+    window.matchMedia("(prefers-color-scheme: dark)").matches) //removed !
 ) {
   themeToggleDarkIcons.forEach((icon) => icon.classList.remove("hidden")); // Show dark mode icon
 } else {
