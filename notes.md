@@ -1,7 +1,7 @@
 # current
 
-- fix social card shit
 - check sitemap and robots stuff
+- check seo word stuffing stuff
 - add font lato, something else or go back to Inter
 - figure out container, fragment, etc
 - add alternative cta with business number
@@ -13,6 +13,7 @@
 - add decap cms support
 - do I want to set up bitbucket and new email shit?
 - start working on page components
+- impliment Astro-seo later maybe
 - ~~figure out component dodging for navbar~~
 - ~~migrate all data objects to a single file~~
 - ~~figure out rtl and lt~~
