@@ -1,14 +1,22 @@
 ---
 import Containter from "../components/Containter.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Sectionhead from "../components/SectionHead.astro";
 
 const web3FormsAccessKey = import.meta.env.WEB3FORMS_ACCESS_KEY; //dev
 // const web3FormsAccessKey = process.env.WEB3FORMS_ACCESS_KEY; //prod
 ---
 
-<BaseLayout title="Contact Us">
+<BaseLayout title="Contact Us" description="Contact Us">
   <Containter class="text-gray-600 dark:text-gray-300">
-    <section class="mt-16 bg-white dark:bg-gray-800">
+    <!-- <Sectionhead>
+      <Fragment slot="title">Contact Us</Fragment>
+      <Fragment slot="desc">
+        Starting a new business? Got a website in mind? Looking to hit the top
+        search results on Google? Let us know what you are after!
+      </Fragment>
+    </Sectionhead> -->
+    <section class="mt-16 bg-white dark:bg-gray-800 lg:mt-0">
       <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
         <h2
           class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
