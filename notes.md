@@ -1,11 +1,16 @@
 # current
 
+- finish tech stack section
+- add about page stuff, pricing, faq, other stuff
+- add contact info in contact page
+- add gallery, just a grid for now that maybe can expand
+- make second call to action button that has phone number and phone svg
+- finish adding accessability stuff to images
+- decide on sectionhead or flowbite
+- blog page layout
 - check sitemap and robots stuff
-- check seo word stuffing stuff
+- check seo, score etc
 - add font lato, something else or go back to Inter
-- figure out container, fragment, etc
-- add alternative cta with business number
-- accessability and website score
 
 ## future
 
@@ -14,9 +19,6 @@
 - do I want to set up bitbucket and new email shit?
 - start working on page components
 - impliment Astro-seo later maybe
-- ~~figure out component dodging for navbar~~
-- ~~migrate all data objects to a single file~~
-- ~~figure out rtl and lt~~
 - work on Razorback template - possibly on vacay
 - more to come
 
