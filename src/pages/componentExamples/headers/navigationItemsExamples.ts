@@ -8,16 +8,11 @@ export const navigationItemsExamples = [
     path: "#",
   },
   {
-    title: "Components ⌄",
+    title: "News",
     path: "#",
   },
-
   {
     title: "About",
-    path: "#",
-  },
-  {
-    title: "Blog",
     path: "#",
   },
   {

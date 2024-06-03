@@ -1,22 +1,25 @@
 ---
-import Containter from "../components/Containter.astro";
+import Container from "../components/Containter.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/heroes/Hero.astro";
-import Faq from "../components/misc/Faq.astro";
-import Expose from "../components/misc/Expose.astro";
-import TechFeatures from "../components/misc/TechFeatures.astro";
 import FeatureHead from "../components/misc/FeatureHead.astro";
+import Expose from "../components/misc/Expose.astro";
+import CtaBanner from "../components/misc/CtaBanner.astro";
+
+import TechFeatures from "../components/misc/TechFeatures.astro";
 ---
 
 <BaseLayout title="Yellow City Web Designs">
   <Hero />
   <FeatureHead />
-  <Containter class="text-gray-600 dark:text-gray-300">
+  <Container class="text-gray-600 dark:text-gray-300">
     <Expose />
+  </Container>
+  <CtaBanner />
+  <Container>
     tech features
     <TechFeatures />
-    call to action span <br />put faq on about page add <br />maybe a min about? <br
-    /> add pricing somewhere
-    <Faq />
-  </Containter>
+    put faq on about page add <br />maybe a min about? <br /> add pricing in about(static
+    cheap, fancy, wordpress)
+  </Container>
 </BaseLayout>
