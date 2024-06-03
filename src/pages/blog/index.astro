@@ -4,7 +4,7 @@ import Header from "../../components/headers/Header1.astro";
 import Footer from "../../components/footers/Footer1.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import Container from "../../components/Container.astro";
+import Containter from "../../components/Containter.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
