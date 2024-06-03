@@ -4,7 +4,7 @@ import Header from "../../components/headers/Header1.astro";
 import Footer from "../../components/footers/Footer1.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import Containter from "../../components/Containter.astro";
+import Container from "../../components/Container.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -13,96 +13,33 @@ const posts = (await getCollection("blog")).sort(
 
 <head>
   <BaseHead title="Blog" description="Blog" />
-  <style>
-    main {
-      width: 960px;
-    }
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    ul li {
-      width: calc(50% - 1rem);
-    }
-    ul li * {
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
-    ul li:first-child {
-      width: 100%;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    ul li:first-child img {
-      width: 100%;
-    }
-    ul li:first-child .title {
-      font-size: 2.369rem;
-    }
-    ul li img {
-      margin-bottom: 0.5rem;
-      border-radius: 12px;
-    }
-    ul li a {
-      display: block;
-    }
-    .title {
-      margin: 0;
-      line-height: 1;
-    }
-    .date {
-      margin: 0;
-    }
-    ul li a:hover h4,
-    ul li a:hover .date {
-      color: rgb(var(--accent));
-    }
-    ul a:hover img {
-      box-shadow: var(--box-shadow);
-    }
-    @media (max-width: 720px) {
-      ul {
-        gap: 0.5em;
-      }
-      ul li {
-        width: 100%;
-        text-align: center;
-      }
-      ul li:first-child {
-        margin-bottom: 0;
-      }
-      ul li:first-child .title {
-        font-size: 1.563em;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <Header />
 
-  <div class="bg-white dark:bg-gray-800">
-    <main class="mx-auto w-full">
+  <div class="my-24 bg-white dark:bg-gray-800">
+    <main class="mx-auto w-full max-w-screen-lg px-4">
       <section>
-        <ul>
+        <ul class="flex flex-wrap gap-8">
           {
             posts.map((post) => (
-              <li>
-                <a href={`/blog/${post.slug}/`}>
+              <li class="mw-full text-center first:mb-4 first:w-full md:w-[calc(50%-1rem)]">
+                <a
+                  href={`/blog/${post.slug}/`}
+                  class="hover:text-accent block no-underline transition duration-200 ease-in-out"
+                >
                   <img
+                    class="mb-2 w-full rounded-xl transition duration-200 ease-in-out hover:shadow-lg"
                     width={720}
                     height={360}
                     src={post.data.heroImage}
                     alt=""
                   />
-                  <h4 class="title text-gray-900 dark:text-white">
+                  <h4 class="text-2xl text-gray-900 first:mb-4 dark:text-white ">
                     {post.data.title}
                   </h4>
-                  <p class="date text-gray-500 dark:text-gray-300">
+                  <p class="date text-sm text-gray-500 dark:text-gray-300">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
