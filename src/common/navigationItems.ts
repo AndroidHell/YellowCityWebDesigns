@@ -19,8 +19,8 @@ export const navigationItems = [
         path: "/componentExamples/headers",
       },
       { title: "Footers", path: "/componentExamples/footers" },
-      { title: "Heros", path: "/componentExamples/heros" },
-      { title: "Misc", path: "/componentExamples/misc" },
+      { title: "Heros", path: "/comingsoon" },
+      { title: "Misc", path: "/comingsoon" },
     ],
   },
 
@@ -31,7 +31,7 @@ export const navigationItems = [
   },
   {
     title: "Blog",
-    path: "/blog",
+    path: "/comingsoon",
     icon: "blog",
   },
   {
