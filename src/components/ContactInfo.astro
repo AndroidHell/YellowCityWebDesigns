@@ -3,14 +3,13 @@
 ---
 
 <section class="bg-white dark:bg-gray-800">
-  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-    <div class="space-y-8 sm:grid sm:grid-cols-3 sm:gap-12 md:space-y-0">
+  <div class="mx-auto max-w-screen-md px-4 py-8 sm:py-16 lg:px-6">
+    <div class="space-y-8 sm:grid sm:grid-cols-2 sm:gap-12 md:space-y-0">
       <div
         class="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-gray-100 p-4 shadow dark:bg-gray-700"
-        onclick="copyToClipboard('806-555-5555')"
+        onclick="copyToClipboard('806-226-9548')"
         aria-label="click for phone number"
       >
-        <!-- Updated div -->
         <div
           class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 dark:bg-primary-900 lg:h-12 lg:w-12"
         >
@@ -30,10 +29,9 @@
       </div>
       <div
         class="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-gray-100 p-4 shadow dark:bg-gray-700"
-        onclick="copyToClipboard('info@ycwd.com')"
+        onclick="copyToClipboard('dashaw@gmail.com')"
         aria-label="click for email"
       >
-        <!-- Updated div -->
         <div
           class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 dark:bg-primary-900 lg:h-12 lg:w-12"
         >
@@ -54,12 +52,13 @@
         <h3 class="mb-2 text-xl font-bold dark:text-white">Email:</h3>
         <p class="text-gray-500 dark:text-gray-400">dashaw@gmail.com</p>
       </div>
-      <div
+
+      <!-- make max xl if using addy card -->
+      <!-- <div
         class="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-gray-100 p-4 shadow dark:bg-gray-700"
         onclick="copyToClipboard('Address: 1000 Some St., Amarillo, TX 79102')"
         aria-label="click for address"
       >
-        <!-- Updated div -->
         <div
           class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 dark:bg-primary-900 lg:h-12 lg:w-12"
         >
@@ -80,19 +79,20 @@
         <p class="text-gray-500 dark:text-gray-400">Amarillo, TX</p>
         <p class="text-gray-500 dark:text-gray-400">79102</p>
       </div>
+    </div> -->
     </div>
   </div>
-</section>
 
-<script is:inline>
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(
-      () => {
-        alert(text + " copied to clipboard!");
-      },
-      (err) => {
-        alert("Failed to copy text: ", err);
-      },
-    );
-  }
-</script>
+  <script is:inline>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(
+        () => {
+          alert(text + " copied to clipboard!");
+        },
+        (err) => {
+          alert("Failed to copy text: ", err);
+        },
+      );
+    }
+  </script>
+</section>
