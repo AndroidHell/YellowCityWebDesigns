@@ -1,44 +1,16 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Containter from "../components/Containter.astro";
+import Container from "../components/Containter.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Sectionhead from "../components/SectionHead.astro";
+import SectionHead from "../components/SectionHead.astro";
+import ClientGallery from "../components/ClientGallery.astro";
 ---
 
 <BaseLayout title="Gallery" description="Gallery">
-  <Containter>
-    <Sectionhead>
+  <Container>
+    <SectionHead>
       <Fragment slot="title">Our Gallery</Fragment>
       <Fragment slot="desc">Check out what we have made for people</Fragment>
-    </Sectionhead>
-    <div class="mx-auto max-w-screen-md pb-8">
-      <h1 class="text-gray-900 dark:text-white">Services Page</h1>
-      <main class="text-gray-600 dark:text-gray-300">
-        <p class="mb-4">
-          main Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-          ultricies leo integer malesuada nunc vel risus commodo viverra.
-          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
-          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
-          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
-          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
-          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
-          Dictumst quisque sagittis purus sit amet.
-        </p>
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
-          ultricies leo integer malesuada nunc vel risus commodo viverra.
-          Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis
-          eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.
-          Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis
-          egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum
-          lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-          dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi.
-          Dictumst quisque sagittis purus sit amet.
-        </p>
-      </main>
-    </div>
-  </Containter>
+    </SectionHead>
+    <ClientGallery />
+  </Container>
 </BaseLayout>
