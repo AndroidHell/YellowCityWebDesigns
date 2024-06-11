@@ -1,157 +1,121 @@
 ---
-
+export const GalleryItems = [
+  {
+    title: "Yellow City Web Design",
+    desc: "The world's best website making company, like ever.",
+    image: "/public/gallery-placeholder.png",
+  },
+  {
+    title: "Walker and Sons",
+    desc: "Lawn care company owned by a father and his two sons.",
+    image: "/public/gallery-placeholder.png",
+  },
+  {
+    title: "Salt of the Earth",
+    desc: "Feremented foods company that sepcializes in kraut and kimchi.",
+    image: "/public/gallery-placeholder.png",
+  },
+  {
+    title: "Fun & Gamez",
+    desc: "Really cool locally owned gaming store that has a lot of DnD stuff.",
+    image: "/public/gallery-placeholder.png",
+  },
+  {
+    title: "That Annoying Vegan Place",
+    desc: "I made theis awesome site but to this day, still don't know what a bloodmouth is.",
+    image: "/public/gallery-placeholder.png",
+  },
+  {
+    title: "The Nihilist Nook",
+    desc: "Some dude watched The Big Lobowski and made Flea's character his whole identity.",
+    image: "/public/gallery-placeholder.png",
+  },
+];
 ---
 
-<!-- gallery golare -->
-<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-  <button
-    data-modal-target="gallery-modal-1"
-    data-modal-toggle="gallery-modal-1"
-    class="max-w-sm rounded-lg border border-gray-200 bg-gray-100 shadow dark:border-gray-700 dark:bg-gray-700"
-    type="button"
-  >
-    <img
-      class="rounded-t-lg"
-      src="/gallery-placeholder.png"
-      alt="gallery placeholder"
-    />
-    <div class="p-5">
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+<div
+  class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3"
+>
+  {
+    GalleryItems.map((item, index) => (
+      <button
+        data-modal-target={`gallery-modal-${index + 1}`}
+        data-modal-toggle={`gallery-modal-${index + 1}`}
+        class="flex max-w-sm flex-col rounded-lg border border-gray-200 bg-gray-100 shadow dark:border-gray-700 dark:bg-gray-700"
+        type="button"
       >
-        YCWD Gallery Demo 1
-      </h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        This is a card to test how gallery would look.
-      </p>
-    </div>
-  </button>
-
-  <button
-    data-modal-target="gallery-modal-2"
-    data-modal-toggle="gallery-modal-2"
-    class="max-w-sm rounded-lg border border-gray-200 bg-gray-100 shadow dark:border-gray-700 dark:bg-gray-700"
-    type="button"
-  >
-    <img
-      class="rounded-t-lg"
-      src="/gallery-placeholder.png"
-      alt="gallery placeholder"
-    />
-    <div class="p-5">
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-      >
-        YCWD Gallery Demo 2
-      </h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        This is a card to test how gallery would look.
-      </p>
-    </div>
-  </button>
+        <img
+          class="flex-shrink-0 rounded-t-lg"
+          src={item.image}
+          alt={item.title}
+        />
+        <div class="flex-grow p-5">
+          <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white sm:text-lg lg:text-2xl">
+            {item.title}
+          </h5>
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-300 md:text-base">
+            {item.desc}
+          </p>
+        </div>
+      </button>
+    ))
+  }
 </div>
 
 <!-- modal madness -->
-<!-- Main modal -->
-<div
-  id="gallery-modal-1"
-  tabindex="-1"
-  aria-hidden="true"
-  class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0"
->
-  <div class="relative max-h-full w-full max-w-4xl p-4">
-    <!-- Modal content -->
-    <div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
-      <!-- Modal header -->
+<div>
+  {
+    GalleryItems.map((item, index) => (
       <div
-        class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+        id={`gallery-modal-${index + 1}`}
+        tabindex="-1"
+        aria-hidden="true"
+        class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0"
       >
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-          YCWD Gallery Demo 1
-        </h3>
-        <button
-          type="button"
-          class="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-          data-modal-hide="gallery-modal-1"
-        >
-          <svg
-            class="h-3 w-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
-          </svg>
-          <span class="sr-only">Close modal</span>
-        </button>
+        <div class="relative max-h-full w-full max-w-4xl p-4">
+          {/* Modal content */}
+          <div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
+            {/* Modal header */}
+            <div class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                {item.title}
+              </h3>
+              <button
+                type="button"
+                class="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide={`gallery-modal-${index + 1}`}
+              >
+                <svg
+                  class="h-3 w-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            {/* Modal body */}
+            <div class="space-y-4">
+              <img src={item.image} alt={item.title} />
+            </div>
+            {/* Modal footer */}
+            <div class="flex items-center rounded-b border-t border-gray-200 p-4 dark:border-gray-600 md:p-5">
+              <p class=" font-normal text-gray-700 dark:text-gray-300">
+                {item.desc}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Modal body -->
-      <div class="space-y-4">
-        <img src="gallery-placeholder.png" alt="gallery placeholder" />
-      </div>
-      <!-- Modal footer -->
-      <div
-        class="flex items-center rounded-b border-t border-gray-200 p-4 dark:border-gray-600 md:p-5"
-      >
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Main modal -->
-<div
-  id="gallery-modal-2"
-  tabindex="-1"
-  aria-hidden="true"
-  class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0"
->
-  <div class="relative max-h-full w-full max-w-4xl p-4">
-    <!-- Modal content -->
-    <div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
-      <!-- Modal header -->
-      <div
-        class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
-      >
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-          YCWD Gallery Demo 2
-        </h3>
-        <button
-          type="button"
-          class="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-          data-modal-hide="gallery-modal-2"
-        >
-          <svg
-            class="h-3 w-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
-          </svg>
-          <span class="sr-only">Close modal</span>
-        </button>
-      </div>
-      <!-- Modal body -->
-      <div class="space-y-4">
-        <img src="gallery-placeholder.png" alt="gallery placeholder" />
-      </div>
-      <!-- Modal footer -->
-      <div
-        class="flex items-center rounded-b border-t border-gray-200 p-4 dark:border-gray-600 md:p-5"
-      >
-      </div>
-    </div>
-  </div>
+    ))
+  }
 </div>
