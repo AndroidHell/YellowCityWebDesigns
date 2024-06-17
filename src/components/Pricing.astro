@@ -1,5 +1,42 @@
 ---
-
+const PricingItems = [
+  {
+    title: "Basic",
+    desc: "Best option for affordable small personal or business sites.",
+    price: "1400",
+    features: [
+      "Pre-made templates",
+      "Free edits: **3 months**",
+      "Hosting: **$25/month**",
+      "Unlimited updates",
+      "24/7 customer support",
+    ],
+  },
+  {
+    title: "Custom",
+    desc: "Hand-coded sites utilizing customized components.",
+    price: "1800",
+    features: [
+      "5 pages",
+      "Free edits: **6 months**",
+      "Hosting: **$25/month**",
+      "Unlimited updates",
+      "24/7 customer support",
+    ],
+  },
+  {
+    title: "eCommerce",
+    desc: "Comes with a powerful and user-friendly CMS.",
+    price: "5000",
+    features: [
+      "Paid theme included in price",
+      "Free edits: **6 months**",
+      "Hosting: **$25/month**",
+      "Unlimited updates",
+      "24/7 customer support",
+    ],
+  },
+];
 ---
 
 <section class="bg-white dark:bg-gray-800">
@@ -19,277 +56,54 @@
     <div
       class="space-y-8 sm:gap-6 lg:grid lg:grid-cols-3 lg:space-y-0 xl:gap-10"
     >
-      <!-- Pricing Card -->
-      <div
-        class="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-200 bg-gray-50 p-6 text-center text-gray-900 shadow dark:border-gray-800 dark:bg-gray-900 dark:text-white xl:p-8"
-      >
-        <h3 class="mb-4 text-2xl font-semibold">Basic</h3>
-        <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-          Best option for affordable small personal or business sites.
-        </p>
-        <div class="my-8 flex items-baseline justify-center">
-          <span class="mr-2 text-5xl font-extrabold">$1400</span>
-          <!-- <span class="text-gray-500 dark:text-gray-400">/month</span> -->
-        </div>
-        <!-- List -->
-        <ul role="list" class="mb-8 space-y-4 text-left">
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
+      {
+        PricingItems.map((item) => (
+          <div class="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-200 bg-gray-50 p-6 text-center text-gray-900 shadow dark:border-gray-800 dark:bg-gray-900 dark:text-white xl:p-8">
+            <h3 class="mb-4 text-2xl font-semibold">{item.title}</h3>
+            <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
+              {item.desc}
+            </p>
+            <div class="my-8 flex items-baseline justify-center">
+              <span class="mr-2 text-5xl font-extrabold">${item.price}</span>
+              {/* <span class="text-gray-500 dark:text-gray-400">/month</span> */}
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              {item.features.map((feature) => (
+                <li class="flex items-center space-x-3">
+                  <svg
+                    class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  {/* <span>{feature}</span> */}
+                  {feature.includes("**") ? (
+                    <>
+                      <span>{feature.split("**")[0]}</span>
+                      <strong>{feature.split("**")[1]}</strong>
+                      <span>{feature.split("**")[2]}</span>
+                    </>
+                  ) : (
+                    <span>{feature}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="/contact"
+              class="rounded-lg bg-primary-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 dark:text-white dark:focus:ring-primary-900"
             >
-            <span>Pre-made templates</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>free edits: <span class="font-semibold">3 months</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Hosting: <span class="font-semibold">$25/month</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Unlimited updates</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>24/7 customer support</span>
-          </li>
-        </ul>
-        <a
-          href="/contact"
-          class="rounded-lg bg-primary-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 dark:text-white dark:focus:ring-primary-900"
-          >Get started</a
-        >
-      </div>
-      <!-- Pricing Card -->
-      <div
-        class="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-200 bg-gray-50 p-6 text-center text-gray-900 shadow dark:border-gray-800 dark:bg-gray-900 dark:text-white xl:p-8"
-      >
-        <h3 class="mb-4 text-2xl font-semibold">Custom</h3>
-        <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-          Hand-coded sites utilizing customized components.
-        </p>
-        <div class="my-8 flex items-baseline justify-center">
-          <span class="mr-2 text-5xl font-extrabold">$1800</span>
-        </div>
-        <!-- List -->
-        <ul role="list" class="mb-8 space-y-4 text-left">
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>5 pages</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Free edits: <span class="font-semibold">6 months</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Hosting: <span class="font-semibold">$25/month</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Unlimited updates</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>24/7 customer support</span>
-          </li>
-        </ul>
-        <a
-          href="/contact"
-          class="rounded-lg bg-primary-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 dark:text-white dark:focus:ring-primary-900"
-          >Get started</a
-        >
-      </div>
-      <!-- Pricing Card -->
-      <div
-        class="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-200 bg-gray-50 p-6 text-center text-gray-900 shadow dark:border-gray-800 dark:bg-gray-900 dark:text-white xl:p-8"
-      >
-        <h3 class="mb-4 text-2xl font-semibold">eCommerce</h3>
-        <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-          Comes with a powerful and user-friendly CMS.
-        </p>
-        <div class="my-8 flex items-baseline justify-center">
-          <span class="mr-2 text-5xl font-extrabold">$5000</span>
-        </div>
-        <!-- List -->
-        <ul role="list" class="mb-8 space-y-4 text-left">
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Paid theme included in price</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Free edits: <span class="font-semibold">6 months</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Hosting: <span class="font-semibold">$25/month</span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>Unlimited updates</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path></svg
-            >
-            <span>24/7 customer support</span>
-          </li>
-        </ul>
-        <a
-          href="/contact"
-          class="rounded-lg bg-primary-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 dark:text-white dark:focus:ring-primary-900"
-          >Get started</a
-        >
-      </div>
+              Get started
+            </a>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
