@@ -1,6 +1,5 @@
 # current
 
-- add gallery, just a grid for now that maybe can expand
 - make second call to action button that has phone number and phone svg
 - finish adding accessability stuff to images
 - fix github readme
