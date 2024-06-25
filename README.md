@@ -42,4 +42,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-Note that I use pnpm for this site
+Note that I use pnpm for this site, also I am leaving the genie emoji because it's cute af.
