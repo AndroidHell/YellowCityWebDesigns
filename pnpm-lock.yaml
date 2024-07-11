@@ -26,6 +26,9 @@ dependencies:
   '@fontsource/poppins':
     specifier: ^5.0.14
     version: 5.0.14
+  '@philnash/astro-pagination':
+    specifier: ^0.4.0
+    version: 0.4.0(astro@4.8.2)
   decap-cms-app:
     specifier: ^3.1.11
     version: 3.1.11(@types/react@18.3.3)(graphql@15.9.0)(react-dom@18.3.1)(react@18.3.1)
@@ -1423,6 +1426,14 @@ packages:
 
   /@petamoriken/float16@3.8.7:
     resolution: {integrity: sha512-/Ri4xDDpe12NT6Ex/DRgHzLlobiQXEW/hmG08w1wj/YU7hLemk97c+zHQFp0iZQ9r7YqgLEXZR2sls4HxBf9NA==}
+    dev: false
+
+  /@philnash/astro-pagination@0.4.0(astro@4.8.2):
+    resolution: {integrity: sha512-FKhmOjUnZGPsDBvS4yTon6RCcQNNPSQB5FrBIhXYktKavSDf6TsUzSrre+mT2Pb4Gr0Ddl05BJb1jI161ro+gw==}
+    peerDependencies:
+      astro: ^2.3.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      astro: 4.8.2(typescript@5.4.5)
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
