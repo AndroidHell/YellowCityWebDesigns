@@ -6,7 +6,19 @@ import HorizontalCard from "../../../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
 
-export async function getStaticPaths({ paginate }) {
+interface Post {
+  data: {
+    title: string;
+    heroImage: string;
+    description: string;
+    badge?: string;
+    tags?: string[];
+    // Add other properties as needed
+  };
+  slug: string;
+}
+
+export async function getStaticPaths({ paginate }: { paginate: any }) {
   const all_posts = await getCollection("blog");
   const all_tags = all_posts.flatMap((post) => {
     return post.data.tags || [];
@@ -43,20 +55,31 @@ const params = Astro.params;
         </div>
       ) : (
         <ul>
-          {page.data.map((post) => (
-            <>
-              <HorizontalCard
-                title={post.data.title}
-                img={post.data.heroImage}
-                desc={post.data.description}
-                url={"/blog/" + createSlug(post.data.title, post.slug)}
-                target="_self"
-                badge={post.data.badge}
-                tags={post.data.tags}
-              />
-              <div class="my-4 border-t dark:border-gray-700" />
-            </>
-          ))}
+          {page.data.map(
+            (post: {
+              data: {
+                title: string;
+                heroImage: any;
+                description: any;
+                badge: any;
+                tags: any;
+              };
+              slug: string;
+            }) => (
+              <>
+                <HorizontalCard
+                  title={post.data.title}
+                  img={post.data.heroImage}
+                  desc={post.data.description}
+                  url={"/blog/" + createSlug(post.data.title, post.slug)}
+                  target="_self"
+                  badge={post.data.badge}
+                  tags={post.data.tags}
+                />
+                <div class="my-4 border-t dark:border-gray-700" />
+              </>
+            ),
+          )}
         </ul>
       )
     }
