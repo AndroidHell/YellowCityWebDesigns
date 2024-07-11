@@ -1,9 +1,9 @@
 ---
-heroImage: /blog-placeholder-1.jpg
-pubDate: Jul 11 2024
 title: Test Blog post
 description: Lorem ipsum dolor sit amet
-date: 2024-07-10T16:43:00.000Z
+pubDate: Jul 11 2024
+update: July 12 2024
+heroImage: /blog-placeholder-1.jpg
 badge: "test"
 tags: "test"
 ---
