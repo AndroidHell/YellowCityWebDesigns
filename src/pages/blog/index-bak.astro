@@ -17,39 +17,6 @@ const posts = (await getCollection("blog")).sort(
 <body class="bg-white dark:bg-gray-800">
   <Header />
 
-  <!-- <div class="my-24 bg-white dark:bg-gray-800">
-    <main class="mx-auto w-full max-w-screen-lg px-4">
-      <section>
-        <ul class="flex flex-wrap gap-8">
-          {
-            posts.map((post) => (
-              <li class="mw-full text-center first:mb-4 first:w-full md:w-[calc(50%-1rem)]">
-                <a
-                  href={`/blog/${post.slug}/`}
-                  class="hover:text-accent block no-underline transition duration-200 ease-in-out"
-                >
-                  <img
-                    class="mb-2 w-full rounded-xl transition duration-200 ease-in-out hover:shadow-lg"
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    alt=""
-                  />
-                  <h4 class="text-2xl text-gray-900 first:mb-4 dark:text-white ">
-                    {post.data.title}
-                  </h4>
-                  <p class="date text-sm text-gray-500 dark:text-gray-300">
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-  </div> -->
-
   <div class="my-24 bg-white dark:bg-gray-800">
     <main class="mx-auto w-full max-w-screen-lg px-4">
       <section>
