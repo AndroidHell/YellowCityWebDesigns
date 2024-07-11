@@ -2,7 +2,6 @@
 title: First post
 description: Lorem ipsum dolor sit amet
 pubDate: Jul 08 2022
-date: 2024-07-10T16:43:00.000Z
 heroImage: /blog-placeholder-3.jpg
 badge: "test"
 tag: "test"
