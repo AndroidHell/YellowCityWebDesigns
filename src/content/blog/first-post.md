@@ -7,7 +7,7 @@ title: First post
 date: 2024-07-11T11:46:00.000Z
 tags:
   - test
-  - test2 electric boogaloo
+  - test2 poop
 description: Lorem ipsum dolor sit amet
 ---
 
