@@ -2,6 +2,7 @@
 title: "Fourth post"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 15 2024"
+updatedDate: "Jul 18 2024"
 heroImage: "/blog-placeholder-4.jpg"
 badge: "badge test"
 tags: ["tag test", "foo", "bar"]
