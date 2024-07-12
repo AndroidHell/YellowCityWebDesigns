@@ -19,7 +19,7 @@ interface Post {
 }
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
-  const all_posts = await getCollection("blog");
+  const all_posts = await getCollection("news");
   const all_tags = all_posts.flatMap((post) => {
     return post.data.tags || [];
   });
@@ -39,19 +39,17 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Blog - " + params.tag}>
+<BaseLayout title={"News - " + params.tag}>
   <BlogContainer>
     <SectionHead>
-      <Fragment slot="title">Blog - {params.tag}</Fragment>
+      <Fragment slot="title">News - {params.tag}</Fragment>
       <Fragment slot="desc">Posts tagged with "{params.tag}"</Fragment>
     </SectionHead>
     {
       page.data.length === 0 ? (
         <div class="w-full min-w-full border-l-4 border-gray-300 bg-gray-100 p-4">
           <p class="font-bold">Sorry!</p>
-          <p>
-            There are no blog posts to show at the moment. Check back later!
-          </p>
+          <p>There is no news to show at the moment. Check back later!</p>
         </div>
       ) : (
         <ul>
@@ -71,7 +69,7 @@ const params = Astro.params;
                   title={post.data.title}
                   img={post.data.heroImage}
                   desc={post.data.description}
-                  url={"/blog/" + createSlug(post.data.title, post.slug)}
+                  url={"/news/" + createSlug(post.data.title, post.slug)}
                   target="_self"
                   badge={post.data.badge}
                   tags={post.data.tags}
