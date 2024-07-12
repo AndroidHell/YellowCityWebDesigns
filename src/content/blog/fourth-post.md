@@ -1,14 +1,11 @@
 ---
-title: Fourth post
-description: This is a post about posting posts
-pubDate: 2023-06-07T09:15:00.000Z
-updatedDate: 2024-07-12T08:47:00.000Z
-heroImage: /blog-placeholder-4.jpg
-badge: badge test
-tags:
-  - tag test
-  - foo
-  - bar
+title: "Fourth post"
+description: "Lorem ipsum dolor sit amet"
+pubDate: "Jul 15 2024"
+updatedDate: "Jul 18 2024"
+heroImage: "/blog-placeholder-4.jpg"
+badge: "badge test"
+tags: ["tag test", "foo", "bar"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
