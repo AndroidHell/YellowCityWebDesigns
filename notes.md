@@ -1,22 +1,20 @@
 # current
 
+- fix updatedDate in cms/blog
+- add actual blog and news stuff
+- change hero image
 - make second call to action button that has phone number and phone svg
 - finish adding accessability stuff to images
-- fix github readme
-- decide on sectionhead or flowbite
-- blog page layout
-- check sitemap and robots stuff
 - check seo, score etc
+- fix github readme
 - add font lato, something else or go back to Inter
 
 ## future
 
 - maybe set up secondary colors
-- add decap cms support
 - do I want to set up bitbucket and new email shit?
 - start working on page components
 - impliment Astro-seo later maybe
-- work on Razorback template - possibly on vacay
 - more to come
 
 ### colors
