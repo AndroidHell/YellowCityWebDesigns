@@ -30,8 +30,13 @@ export const navigationItems = [
     icon: "about",
   },
   {
+    title: "News",
+    path: "/news",
+    icon: "blog",
+  },
+  {
     title: "Blog",
-    path: "/comingsoon",
+    path: "/blog",
     icon: "blog",
   },
   {
