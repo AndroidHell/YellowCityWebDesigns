@@ -4,7 +4,6 @@ badge: test
 update: July 12 2024
 pubDate: Jul 11 2022
 title: First post
-date: 2024-07-11T11:46:00.000Z
 tags:
   - test
   - derp

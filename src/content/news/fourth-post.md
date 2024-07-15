@@ -4,7 +4,6 @@ pubDate: Jul 14 2024
 updatedDate: Jul 15 2024
 title: Fourth post
 description: Lorem ipsum dolor sit amet
-date: 2023-07-15T08:02:00.000Z
 badge: badge test
 tags:
   - tag test

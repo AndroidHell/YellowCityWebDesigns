@@ -5,7 +5,6 @@ heroImage: /blog-placeholder-3.jpg
 badge: test
 update: July 12 2024
 updatedDate: Jul 15, 2024 10:43 AM
-date: 2024-07-11T11:46:00.000Z
 title: First post
 tags:
   - test
