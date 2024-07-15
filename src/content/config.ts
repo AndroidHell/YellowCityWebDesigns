@@ -18,7 +18,7 @@ const newsSchema = z.object({
   title: z.string(),
   description: z.string(),
   pubDate: z.coerce.date(),
-  updatedDate: z.coerce.date().optional(),
+  updatedDate: z.union([z.string().length(0), z.coerce.date()]).optional(),
   heroImage: z.string().optional(),
   badge: z.string().optional(),
   tags: z
