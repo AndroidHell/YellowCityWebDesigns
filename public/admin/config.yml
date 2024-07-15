@@ -19,7 +19,6 @@ collections:
           name: "pubDate",
           widget: "datetime",
           format: "lll",
-   
         }
       - {
           label: "Updated Date",
