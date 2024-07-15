@@ -1,7 +1,6 @@
 ---
 heroImage: /blog-placeholder-1.jpg
 badge: test
-update: July 12 2024
 title: Test Blog post
 description: Lorem ipsum dolor sit amet
 pubDate: Jul 11 2024
