@@ -5,8 +5,11 @@ const blogSchema = z.object({
   pubDate: z.coerce.date(),
   updatedDate: z.union([z.string().length(0), z.coerce.date()]).optional(),
   heroImage: z.preprocess(
-    (value) => (value === "" ? "/assets/images/placeholder.jpg" : value),
-    z.string().optional(),
+    (value) =>
+      value === "" || value === undefined
+        ? "/assets/images/placeholder.jpg"
+        : value,
+    z.string(),
   ),
   badge: z.string().optional(),
   tags: z
