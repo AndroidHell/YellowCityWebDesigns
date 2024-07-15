@@ -25,6 +25,7 @@ collections:
           name: "updatedDate",
           widget: "datetime",
           format: "lll",
+          default: null,
           required: false,
         }
       - {
