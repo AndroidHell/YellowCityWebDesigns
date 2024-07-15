@@ -2,7 +2,7 @@
 title: Test Blog post
 description: Lorem ipsum dolor sit amet
 pubDate: Jul 11 2024
-update: July 12 2024
+updatedDate: July 12 2024
 heroImage: /blog-placeholder-1.jpg
 badge: "test"
 tags: ["test"]
