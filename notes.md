@@ -1,6 +1,5 @@
 # current
 
-- figure out issue with creating new blog and not being able to pull and build
 - add actual blog and news stuff
 - change hero image
 - make second call to action button that has phone number and phone svg
