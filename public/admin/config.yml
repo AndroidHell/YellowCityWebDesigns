@@ -19,13 +19,13 @@ collections:
           name: "pubDate",
           widget: "datetime",
           format: "lll",
+          default: null,
         }
       - {
           label: "Updated Date",
           name: "updatedDate",
           widget: "datetime",
           format: "lll",
-          default: null,
           required: false,
         }
       - {
