@@ -25,9 +25,16 @@ collections:
           name: "updatedDate",
           widget: "datetime",
           format: "lll",
+          default: "",
+          required: false,
         }
-      - { label: "Featured Image", name: "heroImage", widget: "image" }
-      - { label: "Flair", name: "badge", widget: "string" }
+      - {
+          label: "Featured Image",
+          name: "heroImage",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Flair", name: "badge", widget: "string", required: false }
       - label: "Tags"
         name: "tags"
         widget: "list"
@@ -53,9 +60,16 @@ collections:
           name: "updatedDate",
           widget: "datetime",
           format: "lll",
+          default: "",
+          required: false,
         }
-      - { label: "Featured Image", name: "heroImage", widget: "image" }
-      - { label: "Flair", name: "badge", widget: "string" }
+      - {
+          label: "Featured Image",
+          name: "heroImage",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Flair", name: "badge", widget: "string", required: false }
       - label: "Tags"
         name: "tags"
         widget: "list"
