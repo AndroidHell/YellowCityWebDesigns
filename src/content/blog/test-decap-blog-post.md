@@ -3,7 +3,7 @@ layout: blog
 title: Test Decap blog post
 description: This is a test post from decap
 pubDate: Jul 15, 2024 10:55 AM
-updatedDate: Jul 15, 2024 10:55 AM
+updatedDate: Jul 15, 2024 10:57 AM
 heroImage: src/assets/images/zn7ue5vwv5cd1.jpeg
 badge: NEW
 tags:
