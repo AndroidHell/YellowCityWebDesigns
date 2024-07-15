@@ -5,7 +5,7 @@ update: July 12 2024
 title: Test Blog post
 description: Lorem ipsum dolor sit amet
 pubDate: Jul 11 2024
-updatedDate: Jul 15, 2024 - 09:07 AM
+updatedDate: Jul 15 2024
 tags:
   - test
 ---
