@@ -18,13 +18,13 @@ collections:
           label: "Publish Date",
           name: "pubDate",
           widget: "datetime",
-          format: "MMM D YYYY ",
+          format: "MMM D YYYY, hh:MM a ",
         }
       - {
           label: "Updated Date",
           name: "updatedDate",
           widget: "datetime",
-          ormat: "MMM D YYYY ",
+          format: "MMM D YYYY, hh:MM a ",
         }
       - { label: "Featured Image", name: "heroImage", widget: "image" }
       - { label: "Flair", name: "badge", widget: "string" }
