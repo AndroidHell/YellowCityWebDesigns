@@ -18,13 +18,13 @@ collections:
           label: "Publish Date",
           name: "pubDate",
           widget: "datetime",
-          format: "MMM D, YYYY",
+          format: "MMM D, YYYY - HH:MM A",
         }
       - {
           label: "Updated Date",
           name: "updatedDate",
           widget: "datetime",
-          format: "MMM D, YYYY",
+          format: "MMM D, YYYY - HH:MM A",
         }
       - { label: "Featured Image", name: "heroImage", widget: "image" }
       - { label: "Flair", name: "badge", widget: "string" }
@@ -42,8 +42,18 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "news" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
-      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "pubDate",
+          widget: "datetime",
+          format: "MMM D, YYYY - HH:MM A",
+        }
+      - {
+          label: "Updated Date",
+          name: "updatedDate",
+          widget: "datetime",
+          format: "MMM D, YYYY - HH:MM A",
+        }
       - { label: "Featured Image", name: "heroImage", widget: "image" }
       - { label: "Flair", name: "badge", widget: "string" }
       - label: "Tags"
