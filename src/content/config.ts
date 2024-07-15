@@ -4,7 +4,10 @@ const blogSchema = z.object({
   description: z.string(),
   pubDate: z.coerce.date(),
   updatedDate: z.union([z.string().length(0), z.coerce.date()]).optional(),
-  heroImage: z.string().optional(),
+  heroImage: z.preprocess(
+    (value) => (value === "" ? "/blog-placeholder-1.jpg" : value),
+    z.string().optional(),
+  ),
   badge: z.string().optional(),
   tags: z
     .array(z.string())
