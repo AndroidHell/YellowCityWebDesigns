@@ -1,11 +1,11 @@
 ---
-updatedDate: 2024-07-15T08:02:00.000Z
 heroImage: /blog-placeholder-4.jpg
-badge: badge test
-pubDate: Jul 15 2024
+pubDate: Jul 14 2024
+updatedDate: Jul 15 2024
 title: Fourth post
 description: Lorem ipsum dolor sit amet
 date: 2023-07-15T08:02:00.000Z
+badge: badge test
 tags:
   - tag test
   - foo
