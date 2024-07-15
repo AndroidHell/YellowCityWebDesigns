@@ -20,7 +20,7 @@ collections:
           widget: "datetime",
           default: "",
           date_format: "MMM D, YYYY",
-          time_format: "HH:MM A",
+          # time_format: "HH:MM A",
         }
       - {
           label: "Updated Date",
@@ -28,7 +28,7 @@ collections:
           widget: "datetime",
           default: "",
           date_format: "MMM D, YYYY",
-          time_format: "HH:MM A",
+          # time_format: "HH:MM A",
         }
       - { label: "Featured Image", name: "heroImage", widget: "image" }
       - { label: "Flair", name: "badge", widget: "string" }
