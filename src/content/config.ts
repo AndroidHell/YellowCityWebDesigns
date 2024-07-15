@@ -5,7 +5,7 @@ const blogSchema = z.object({
   pubDate: z.coerce.date(),
   updatedDate: z.union([z.string().length(0), z.coerce.date()]).optional(),
   heroImage: z.preprocess(
-    (value) => (value === "" ? "/blog-placeholder-1.jpg" : value),
+    (value) => (value === "" ? "/assets/images/placeholder.jpg" : value),
     z.string().optional(),
   ),
   badge: z.string().optional(),
