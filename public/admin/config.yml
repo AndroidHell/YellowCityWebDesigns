@@ -20,13 +20,14 @@ collections:
           widget: "datetime",
           format: "lll",
         }
-      # - {
-      #     label: "Updated Date",
-      #     name: "updatedDate",
-      #     widget: "datetime",
-      #     format: "lll",
-      #     required: false,
-      #   }
+      - {
+          label: "Updated Date",
+          name: "updatedDate",
+          widget: "datetime",
+          format: "lll",
+          default: "",
+          required: false,
+        }
       - {
           label: "Featured Image",
           name: "heroImage",
