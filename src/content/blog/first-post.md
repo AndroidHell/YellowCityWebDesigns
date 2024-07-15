@@ -3,7 +3,6 @@ description: Lorem ipsum dolor sit amet
 pubDate: Jul 11 2022
 heroImage: /blog-placeholder-3.jpg
 badge: test
-update: July 12 2024
 updatedDate: Jul 15, 2024 10:43 AM
 title: First post
 tags:
