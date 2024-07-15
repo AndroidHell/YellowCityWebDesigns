@@ -2,6 +2,7 @@
 title: blah
 description: this is a test
 pubDate: Jul 15, 2024 11:34 AM
+updatedDate: Jul 15, 2024 11:59 AM
 heroImage: /assets/images/zn7ue5vwv5cd1.jpeg
 ---
 
