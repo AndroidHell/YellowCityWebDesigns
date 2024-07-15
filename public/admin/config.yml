@@ -32,7 +32,6 @@ collections:
           label: "Featured Image",
           name: "heroImage",
           widget: "image",
-          default: "",
           required: false,
         }
       - { label: "Flair", name: "badge", widget: "string", required: false }
