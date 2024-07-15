@@ -14,8 +14,22 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
-      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "pubDate",
+          widget: "datetime",
+          default: "",
+          date_format: "MMM D, YYYY",
+          time_format: "HH:MM A",
+        }
+      - {
+          label: "Updated Date",
+          name: "updatedDate",
+          widget: "datetime",
+          default: "",
+          date_format: "MMM D, YYYY",
+          time_format: "HH:MM A",
+        }
       - { label: "Featured Image", name: "heroImage", widget: "image" }
       - { label: "Flair", name: "badge", widget: "string" }
       - label: "Tags"
