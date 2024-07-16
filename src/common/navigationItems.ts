@@ -6,7 +6,7 @@ export const navigationItems = [
   },
   {
     title: "Gallery",
-    path: "gallery",
+    path: "/gallery",
     icon: "gallery",
   },
   {
