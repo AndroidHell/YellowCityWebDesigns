@@ -3,7 +3,7 @@ import { navigationItems as navItems } from "../../../common/navigationItems";
 const currentPath = Astro.url.pathname;
 ---
 
-<ul
+<!-- <ul
   class="mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
 >
   {
@@ -68,8 +68,8 @@ const currentPath = Astro.url.pathname;
       );
     })
   }
-</ul>
-<!-- <ul
+</ul> -->
+<ul
   class="mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
 >
   {
@@ -78,10 +78,16 @@ const currentPath = Astro.url.pathname;
       const dropdownToggleId = `dropdownNavbarLink-${index}`;
 
       // Determine if the current item should be active
+      // const isActive =
+      //   currentPath === item.path ||
+      //   (item.children &&
+      //     item.children.some((child) => currentPath.startsWith(child.path)));
       const isActive =
-        currentPath === item.path ||
+        currentPath.slice(1) === item.path ||
         (item.children &&
-          item.children.some((child) => currentPath.startsWith(child.path)));
+          item.children.some((child) =>
+            currentPath.slice(1).startsWith(child.path),
+          ));
 
       return (
         <>
@@ -153,4 +159,4 @@ const currentPath = Astro.url.pathname;
       );
     })
   }
-</ul> -->
+</ul>
