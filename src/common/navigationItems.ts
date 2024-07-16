@@ -23,7 +23,6 @@ export const navigationItems = [
       { title: "Misc", path: "/comingsoon" },
     ],
   },
-
   {
     title: "About",
     path: "/about",
