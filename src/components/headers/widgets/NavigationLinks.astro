@@ -78,16 +78,10 @@ const currentPath = Astro.url.pathname;
       const dropdownToggleId = `dropdownNavbarLink-${index}`;
 
       // Determine if the current item should be active
-      // const isActive =
-      //   currentPath === item.path ||
-      //   (item.children &&
-      //     item.children.some((child) => currentPath.startsWith(child.path)));
       const isActive =
-        currentPath.slice(1) === item.path ||
+        currentPath === item.path ||
         (item.children &&
-          item.children.some((child) =>
-            currentPath.slice(1).startsWith(child.path),
-          ));
+          item.children.some((child) => currentPath.startsWith(child.path)));
 
       return (
         <>
