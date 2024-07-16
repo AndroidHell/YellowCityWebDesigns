@@ -7,13 +7,13 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
 
 <div
   id="drawer-navigation"
-  class="fixed left-0 top-0 z-50 h-screen w-64 -translate-x-full overflow-y-auto bg-white p-4 transition-transform dark:bg-gray-800"
+  class="fixed left-0 top-0 z-50 h-screen w-64 -translate-x-full overflow-y-auto bg-primary-400 p-0 transition-transform dark:bg-gray-800"
   tabindex="-1"
   aria-labelledby="drawer-navigation-label"
 >
   <h5
     id="drawer-navigation-label"
-    class="text-base font-semibold uppercase text-gray-500 dark:text-gray-400"
+    class="w-full bg-white p-6 text-base font-semibold uppercase text-gray-600 dark:bg-gray-700 dark:text-gray-200"
   >
     YCWD
   </h5>
@@ -21,7 +21,7 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
     type="button"
     data-drawer-hide="drawer-navigation"
     aria-controls="drawer-navigation"
-    class="absolute end-2.5 top-2.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+    class="absolute end-3 top-6 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-600 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
   >
     <svg
       class="h-3 w-3"
@@ -39,7 +39,8 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
     </svg>
     <span class="sr-only">Close menu</span>
   </button>
-  <div class="overflow-y-auto py-4">
+
+  <div class="overflow-y-auto p-4 py-4">
     <ul class="space-y-2 font-medium">
       <!-- dropdown -->
       {
@@ -49,7 +50,7 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
               <li>
                 <button
                   type="button"
-                  class="group flex w-full items-center rounded-lg p-2 text-gray-900 transition duration-75 hover:bg-gray-100 hover:text-yellow-300 dark:text-white dark:hover:bg-gray-700"
+                  class="group flex w-full items-center rounded-lg p-2 text-gray-600 transition duration-75 hover:bg-gray-100 hover:text-yellow-300 dark:text-white dark:hover:bg-gray-700"
                   aria-controls="dropdown-drawer"
                   data-collapse-toggle="dropdown-drawer"
                 >
@@ -95,7 +96,7 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
               <li>
                 <a
                   href={item.path}
-                  class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 hover:text-yellow-300 dark:text-white dark:hover:bg-gray-700"
+                  class="group flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-yellow-300 dark:text-white dark:hover:bg-gray-700"
                 >
                   <Icon
                     name={item.icon}
@@ -111,9 +112,9 @@ import DrawerThemeToggle from "../Drawer/DrawerThemeToggle.astro";
         ))
       }
     </ul>
-  </div>
 
-  <hr class="mb-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-  <DrawerThemeToggle />
-  <DrawerCta />
+    <hr class="my-4 h-px border-0 bg-gray-500 dark:bg-gray-700" />
+    <DrawerThemeToggle />
+    <DrawerCta />
+  </div>
 </div>
