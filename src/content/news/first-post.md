@@ -1,5 +1,5 @@
 ---
-heroImage: /blog-placeholder-3.jpg
+heroImage: /blog-placeholder.jpg
 badge: test
 update: July 12 2024
 pubDate: Jul 11 2022
