@@ -5,8 +5,13 @@ export const navigationItems = [
     icon: "home",
   },
   {
-    title: "Gallery",
-    path: "/gallery",
+    title: "About",
+    path: "/about",
+    icon: "about",
+  },
+  {
+    title: "Portfolio",
+    path: "/portfolio",
     icon: "gallery",
   },
   {
@@ -24,20 +29,15 @@ export const navigationItems = [
     ],
   },
   {
-    title: "About",
-    path: "/about",
-    icon: "about",
-  },
-  {
     title: "News",
     path: "/news",
     icon: "blog",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-    icon: "blog",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  //   icon: "blog",
+  // },
   {
     title: "Contact Us",
     path: "/contact",

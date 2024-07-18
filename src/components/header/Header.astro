@@ -8,23 +8,17 @@ import NavigationLinks from "./widgets/NavigationLinks.astro";
 
 <Drawer />
 <nav
-  class="nav fixed start-0 top-0 z-30 w-full border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900"
+  class="nav fixed start-0 top-0 z-30 w-full border-gray-200 bg-white px-4 dark:border-gray-600 dark:bg-gray-900 xl:px-0"
 >
-  <div class="mx-auto my-2 flex flex-wrap items-center justify-between p-2">
+  <div
+    class="mx-auto my-2 flex max-w-screen-xl flex-wrap items-center justify-between p-2 pl-2 pr-2"
+  >
     <div class="lg:order-1 lg:flex lg:w-auto">
       <Brand />
     </div>
 
-    <!-- nav links -->
-    <!-- sets the position of the lave links in the headr to left, center, or right -->
-    <!-- <div
-      class="ml-4 mr-4 hidden w-full grow items-center justify-start lg:order-2 lg:flex lg:w-auto"
-    > -->
-    <!-- <div
-      class="ml-4 mr-4 hidden w-full items-center justify-between lg:order-2 lg:flex lg:w-auto"
-    > -->
     <div
-      class="ml-4 mr-4 hidden w-full grow items-center justify-end lg:order-2 lg:flex lg:w-auto"
+      class="ml-4 mr-4 hidden w-full items-center justify-between lg:order-2 lg:flex lg:w-auto"
     >
       <NavigationLinks />
     </div>

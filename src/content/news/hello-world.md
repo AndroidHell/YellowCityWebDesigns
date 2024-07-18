@@ -1,13 +1,12 @@
 ---
-heroImage: /blog-placeholder.jpg
+heroImage: /hello.webp
 badge: NEW
-update: July 12 2024
-pubDate: Jul 11 2022
-title: Hello, world
+pubDate: Jul 18 2024
+title: Hello, world!
 tags:
   - wed dev
   - business
-description: Lorem ipsum dolor sit amet
+description: Hello, Amarillo! I am thrilled to announce the grand opening of my new web development business right here in Amarillo, Texas. With eight years[...]
 ---
 
 ## Grand Opening: Your Go-To Web Development Business in Amarillo, Texas!
@@ -33,7 +32,7 @@ Over the past eight years, I have honed my skills in web design and software dev
 
 ### Join Me in Celebrating
 
-To celebrate the launch of my business, I am offering a special discount for my first clients. Whether you're a small business owner looking to establish an online presence or an individual wanting to showcase your portfolio, now is the perfect time to get started. Let's create something amazing together!
+To celebrate the launch of my business, I am offering a special discounted price for my first clients. Whether you're a small business owner looking to establish an online presence or an individual wanting to showcase your portfolio, now is the perfect time to get started. Let's create something amazing together!
 
 Thank you, Amarillo, for welcoming me into your community. I look forward to working with you and helping your business thrive in the digital landscape.
 
