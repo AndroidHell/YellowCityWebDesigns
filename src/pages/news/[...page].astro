@@ -34,13 +34,14 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
 }
 
 const { page }: { page: PageProps } = Astro.props;
+
+const title = "What's new at YCWD";
+const desc = "Keep up with our latest news";
+const image = "/hero-inner.webp";
 ---
 
 <BaseLayout title="News">
-  <SectionHead
-    title="We Are YCWD"
-    desc="We make websites for people who need websites to just work. We make websites for people like you"
-  />
+  <SectionHead title={title} desc={desc} image={image} />
   <BlogContainer>
     {
       page.data.length === 0 ? (
