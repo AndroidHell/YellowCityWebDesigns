@@ -1,10 +1,8 @@
 # current
 
-- add actual blog and news stuff
-- change hero image
+- figure out if I want transparent navbar
+- redo "components" page to demo each or turn into a services page
 - make second call to action button that has phone number and phone svg
-- finish adding accessability stuff to images
-- check seo, score etc
 - fix github readme
 - add font lato, something else or go back to Inter
 
