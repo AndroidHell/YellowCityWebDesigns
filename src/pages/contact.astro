@@ -6,14 +6,15 @@ import ContactInfo from "../components/ContactInfo.astro";
 
 // const web3FormsAccessKey = import.meta.env.WEB3FORMS_ACCESS_KEY; //dev
 const web3FormsAccessKey = process.env.WEB3FORMS_ACCESS_KEY; //prod
+
+const title = "Contact Us";
+const desc =
+  "Starting a new business? Got a website in mind? Looking to hit the top search results on Google? Let us know what you are after!";
+const image = "/hero-inner.webp";
 ---
 
 <BaseLayout title="Contact Us" description="Contact Us">
-  <SectionHead
-    title="Contact Us"
-    desc="Starting a new business? Got a website in mind? Looking to hit the top search results on Google? Let us know what you are after!"
-    image="/hero-inner.webp"
-  />
+  <SectionHead title={title} desc={desc} image={image} />
   <Containter class="text-gray-600 dark:text-gray-300">
     <section class="mt-12 bg-white dark:bg-gray-800">
       <div class="mx-auto max-w-screen-md px-4">
