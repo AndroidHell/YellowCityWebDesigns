@@ -6,7 +6,7 @@ import NavbarThemeToggle from "./widgets/NavbarThemeToggle.astro";
 import NavigationLinks from "./widgets/NavigationLinks.astro";
 ---
 
-<!-- <Drawer />
+<Drawer />
 <nav
   class="nav fixed start-0 top-0 z-30 w-full border-gray-200 bg-white px-4 dark:border-gray-600 dark:bg-gray-900 xl:px-0"
 >
@@ -66,8 +66,8 @@ import NavigationLinks from "./widgets/NavigationLinks.astro";
       }
     });
   </script>
-</nav> -->
-<Drawer />
+</nav>
+<!-- <Drawer />
 <nav
   class="nav fixed start-0 top-0 z-30 w-full border-gray-200 bg-transparent transition-all duration-300"
 >
@@ -114,17 +114,17 @@ import NavigationLinks from "./widgets/NavigationLinks.astro";
             d="M1 1h15M1 7h15M1 13h15"></path>
         </svg>
       </button>
-
-      <script is:inline>
-        window.addEventListener("scroll", (e) => {
-          const nav = document.querySelector(".nav");
-          if (window.scrollY) {
-            nav?.classList.add("bg-white", "dark:bg-gray-900", "shadow");
-          } else {
-            nav?.classList.remove("bg-white", "dark:bg-gray-900", "shadow");
-          }
-        });
-      </script>
     </div>
   </div>
 </nav>
+
+<script is:inline>
+  window.addEventListener("scroll", (e) => {
+    const nav = document.querySelector(".nav");
+    if (window.scrollY) {
+      nav?.classList.add("bg-white", "dark:bg-gray-900", "shadow");
+    } else {
+      nav?.classList.remove("bg-white", "dark:bg-gray-900", "shadow");
+    }
+  });
+</script> -->

@@ -37,12 +37,11 @@ const { page }: { page: PageProps } = Astro.props;
 ---
 
 <BaseLayout title="News">
+  <SectionHead
+    title="We Are YCWD"
+    desc="We make websites for people who need websites to just work. We make websites for people like you"
+  />
   <BlogContainer>
-    <SectionHead>
-      <Fragment slot="title">Our Latest News</Fragment>
-      <Fragment slot="desc">Here is what YCWD has been up to</Fragment>
-    </SectionHead>
-
     {
       page.data.length === 0 ? (
         <div class="w-full min-w-full border-l-4 border-gray-300 bg-gray-100 p-4">
