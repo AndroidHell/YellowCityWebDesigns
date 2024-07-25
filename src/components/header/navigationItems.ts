@@ -15,32 +15,39 @@ export const navigationItems = [
     icon: "gallery",
   },
   {
-    title: "Components",
-    path: "#",
-    icon: "components",
-    children: [
-      {
-        title: "Headers",
-        path: "/componentExamples/headers",
-      },
-      { title: "Footers", path: "/componentExamples/footers" },
-      { title: "Heros", path: "/comingsoon" },
-      { title: "Misc", path: "/comingsoon" },
-    ],
+    title: "Demo",
+    path: "https://ycwd-rocinante.netlify.app/",
+    icon: "demo",
+    target: "_blank",
   },
+
   {
     title: "News",
     path: "/news",
     icon: "blog",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact",
+    icon: "contactus",
   },
   // {
   //   title: "Blog",
   //   path: "/blog",
   //   icon: "blog",
   // },
-  {
-    title: "Contact Us",
-    path: "/contact",
-    icon: "contactus",
-  },
+  // {
+  //   title: "Components",
+  //   path: "#",
+  //   icon: "components",
+  //   children: [
+  //     {
+  //       title: "Headers",
+  //       path: "/componentExamples/headers",
+  //     },
+  //     { title: "Footers", path: "/componentExamples/footers" },
+  //     { title: "Heros", path: "/comingsoon" },
+  //     { title: "Misc", path: "/comingsoon" },
+  //   ],
+  // },
 ];
