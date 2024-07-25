@@ -2,7 +2,8 @@ interface NavItem {
   title: string;
   path: string;
   icon: string;
-  children?: { title: string; path: string }[]; // Make children optional
+  children?: { title: string; path: string }[];
+  target?: string;
 }
 
 export const navigationItems: NavItem[] = [
@@ -25,6 +26,7 @@ export const navigationItems: NavItem[] = [
     title: "Demo",
     path: "https://ycwd-rocinante.netlify.app/",
     icon: "demo",
+    target: "_blank",
   },
   {
     title: "News",
@@ -36,18 +38,18 @@ export const navigationItems: NavItem[] = [
     path: "/contact",
     icon: "contactus",
   },
-  // {
-  //   title: "Components",
-  //   path: "#",
-  //   icon: "components",
-  //   children: [
-  //     {
-  //       title: "Headers",
-  //       path: "/componentExamples/headers",
-  //     },
-  //     { title: "Footers", path: "/componentExamples/footers" },
-  //     { title: "Heros", path: "/comingsoon" },
-  //     { title: "Misc", path: "/comingsoon" },
-  //   ],
-  // },
+  {
+    title: "Components",
+    path: "#",
+    icon: "components",
+    children: [
+      {
+        title: "Headers",
+        path: "/componentExamples/headers",
+      },
+      { title: "Footers", path: "/componentExamples/footers" },
+      { title: "Heros", path: "/comingsoon" },
+      { title: "Misc", path: "/comingsoon" },
+    ],
+  },
 ];
