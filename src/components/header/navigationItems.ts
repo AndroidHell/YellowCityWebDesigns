@@ -38,18 +38,18 @@ export const navigationItems: NavItem[] = [
     path: "/contact",
     icon: "contactus",
   },
-  {
-    title: "Components",
-    path: "#",
-    icon: "components",
-    children: [
-      {
-        title: "Headers",
-        path: "/componentExamples/headers",
-      },
-      { title: "Footers", path: "/componentExamples/footers" },
-      { title: "Heros", path: "/comingsoon" },
-      { title: "Misc", path: "/comingsoon" },
-    ],
-  },
+  // {
+  //   title: "Components",
+  //   path: "#",
+  //   icon: "components",
+  //   children: [
+  //     {
+  //       title: "Headers",
+  //       path: "/componentExamples/headers",
+  //     },
+  //     { title: "Footers", path: "/componentExamples/footers" },
+  //     { title: "Heros", path: "/comingsoon" },
+  //     { title: "Misc", path: "/comingsoon" },
+  //   ],
+  // },
 ];
