@@ -22,6 +22,11 @@ export const navigationItems: NavItem[] = [
     icon: "gallery",
   },
   {
+    title: "Demo",
+    path: "https://ycwd-rocinante.netlify.app/",
+    icon: "demo",
+  },
+  {
     title: "News",
     path: "/news",
     icon: "blog",
