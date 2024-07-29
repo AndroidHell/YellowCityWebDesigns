@@ -4,7 +4,7 @@ badge: NEW
 pubDate: Jul 18 2024
 title: Hello, world!
 tags:
-  - wed dev
+  - web dev
   - business
 description: Hello, Amarillo! I am thrilled to announce the grand opening of my new web development business right here in Amarillo, Texas. With eight years[...]
 ---

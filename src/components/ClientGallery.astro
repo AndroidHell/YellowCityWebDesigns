@@ -41,14 +41,10 @@ const GalleryItems = [
       <button
         data-modal-target={`gallery-modal-${index + 1}`}
         data-modal-toggle={`gallery-modal-${index + 1}`}
-        class="flex max-w-sm flex-col rounded-lg border border-gray-200 bg-gray-100 shadow dark:border-gray-700 dark:bg-gray-700"
+        class="flex max-w-sm transform flex-col bg-gray-50 shadow-xl transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
         type="button"
       >
-        <img
-          class="flex-shrink-0 rounded-t-lg"
-          src={item.image}
-          alt={item.title}
-        />
+        <img class="flex-shrink-0" src={item.image} alt={item.title} />
         <div class="flex-grow p-5">
           <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white sm:text-lg lg:text-2xl">
             {item.title}

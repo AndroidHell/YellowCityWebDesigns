@@ -15,7 +15,7 @@ const PricingItems = [
   {
     title: "Custom",
     desc: "Hand-coded sites utilizing customized components.",
-    price: "1800",
+    price: "2000",
     features: [
       "5 pages",
       "Free edits: **6 months**",
@@ -58,7 +58,7 @@ const PricingItems = [
     >
       {
         PricingItems.map((item) => (
-          <div class="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-200 bg-gray-50 p-6 text-center text-gray-900 shadow dark:border-gray-800 dark:bg-gray-900 dark:text-white xl:p-8">
+          <div class="mx-auto flex max-w-lg flex-col border border-t-8 border-gray-200  border-t-primary-400 bg-gray-50 p-6 text-center text-gray-900 shadow-xl dark:border-gray-800 dark:border-t-primary-500 dark:bg-gray-900 dark:text-white xl:p-8">
             <h3 class="mb-4 text-2xl font-semibold">{item.title}</h3>
             <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
               {item.desc}
@@ -71,7 +71,7 @@ const PricingItems = [
               {item.features.map((feature) => (
                 <li class="flex items-center space-x-3">
                   <svg
-                    class="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
+                    class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-green-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const PricingItems = [
             </ul>
             <a
               href="/contact"
-              class="rounded-lg bg-primary-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 dark:text-white dark:focus:ring-primary-900"
+              class="rounded-full bg-primary-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-400"
             >
               Get started
             </a>

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import BlogContainer from "../../../../components/BlogContainer.astro";
-import SectionHead from "../../../../components/SectionHead.astro";
+import HeroInner from "../../../../components/HeroInner.astro";
 import BlogCard from "../../../../components/BlogCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
@@ -38,13 +38,13 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
 const { page } = Astro.props;
 const params = Astro.params;
 
-const title = `News - ${params.tag}`;
+const title = `Blog - ${params.tag}`;
 const desc = `Posts tagged with "${params.tag}"`;
 const image = "/hero-inner.webp";
 ---
 
 <BaseLayout title={"Blog - " + params.tag}>
-  <SectionHead title={title} desc={desc} image={image} />
+  <HeroInner title={title} desc={desc} image={image} />
   <BlogContainer>
     {
       page.data.length === 0 ? (
