@@ -1,18 +1,9 @@
 # current
 
-- figure out if I want transparent navbar
-- redo "components" page to demo each or turn into a services page
-- make second call to action button that has phone number and phone svg
 - fix github readme
 - add font lato, something else or go back to Inter
 
 ## future
-
-- maybe set up secondary colors
-- do I want to set up bitbucket and new email shit?
-- start working on page components
-- impliment Astro-seo later maybe
-- more to come
 
 ### colors
 
