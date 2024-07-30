@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import BlogContainer from "../../../../components/BlogContainer.astro";
-import SectionHead from "../../../../components/HeroInner.astro";
-import NewsCard from "../../../../components/BlogCard.astro";
+import HeroInner from "../../../../components/HeroInner.astro";
+import BlogCard from "../../../../components/BlogCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
 import PinnedPosts from "../../../../components/PinnedPosts.astro";
@@ -45,7 +45,7 @@ const image = "/hero-inner.webp";
 ---
 
 <BaseLayout title={"News - " + params.tag}>
-  <SectionHead title={title} image={image} />
+  <HeroInner title={title} image={image} />
 
   <BlogContainer>
     <div class="mt-8 grid grid-cols-1 lg:grid-cols-3">
@@ -70,7 +70,7 @@ const image = "/hero-inner.webp";
                   slug: string;
                 }) => (
                   <>
-                    <NewsCard
+                    <BlogCard
                       title={post.data.title}
                       img={post.data.heroImage}
                       desc={post.data.description}
@@ -133,7 +133,7 @@ const image = "/hero-inner.webp";
         </div>
       </div>
       <div class="lg:cols-span-1">
-        <!-- <PinnedPosts /> -->
+        <PinnedPosts />
       </div>
     </div>
   </BlogContainer>

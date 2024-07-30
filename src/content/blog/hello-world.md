@@ -3,6 +3,7 @@ heroImage: /hello.webp
 badge: NEW
 pubDate: Jul 18 2024
 title: Hello, world!
+pinned: true
 tags:
   - web dev
   - business

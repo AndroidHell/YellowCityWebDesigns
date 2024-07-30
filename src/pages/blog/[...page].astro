@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogContainer from "../../components/BlogContainer.astro";
-import SectionHead from "../../components/HeroInner.astro";
-import NewsCard from "../../components/BlogCard.astro";
+import HeroInner from "../../components/HeroInner.astro";
+import BlogCard from "../../components/BlogCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../../lib/createSlug";
 import PinnedPosts from "../../components/PinnedPosts.astro";
 
-interface NewsPost {
+interface BlogPost {
   data: {
     title: string;
     heroImage: string;
@@ -21,7 +21,7 @@ interface NewsPost {
 }
 
 interface PageProps {
-  data: NewsPost[];
+  data: BlogPost[];
   url: {
     prev?: string;
     next?: string;
@@ -42,7 +42,7 @@ const image = "/hero-inner.webp";
 ---
 
 <BaseLayout title="News">
-  <SectionHead title={title} desc={desc} image={image} />
+  <HeroInner title={title} desc={desc} image={image} />
 
   <BlogContainer>
     <div class="mt-8 grid grid-cols-1 lg:grid-cols-3">
@@ -57,7 +57,7 @@ const image = "/hero-inner.webp";
             <ul class="grid grid-cols-1 gap-4 ">
               {page.data.map((post) => (
                 <>
-                  <NewsCard
+                  <BlogCard
                     title={post.data.title}
                     img={post.data.heroImage}
                     desc={post.data.description}
@@ -118,7 +118,7 @@ const image = "/hero-inner.webp";
         </div>
       </div>
       <div class="lg:cols-span-1">
-        <!-- <PinnedPosts /> -->
+        <PinnedPosts />
       </div>
     </div>
   </BlogContainer>
