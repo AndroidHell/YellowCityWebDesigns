@@ -1,11 +1,11 @@
 ---
 const PricingItems = [
   {
-    title: "Basic",
-    desc: "Best option for affordable small personal or business sites.",
+    title: "Landing Page",
+    desc: "Affordable option for creating an internet presence.",
     price: "1400",
     features: [
-      "Pre-made templates",
+      "1 Page",
       "Free edits: **3 months**",
       "Hosting: **$25/month**",
       "Unlimited updates",
@@ -13,9 +13,9 @@ const PricingItems = [
     ],
   },
   {
-    title: "Custom",
-    desc: "Hand-coded sites utilizing customized components.",
-    price: "2000",
+    title: "Standard",
+    desc: "Fully-featured site great for businesses of all size.",
+    price: "3000",
     features: [
       "5 pages",
       "Free edits: **6 months**",
@@ -39,11 +39,11 @@ const PricingItems = [
 ];
 ---
 
-<section class="bg-white dark:bg-gray-800">
+<section>
   <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-600 dark:text-white"
       >
         Web design isn't one size fits all
       </h2>
@@ -58,13 +58,13 @@ const PricingItems = [
     >
       {
         PricingItems.map((item) => (
-          <div class="mx-auto flex max-w-lg flex-col border border-t-8 border-gray-200  border-t-primary-400 bg-gray-50 p-6 text-center text-gray-900 shadow-xl dark:border-gray-800 dark:border-t-primary-500 dark:bg-gray-900 dark:text-white xl:p-8">
+          <div class="mx-auto flex max-w-lg flex-col border border-t-8 border-gray-200  border-t-primary-400 bg-gray-50 p-6 text-center text-gray-700 shadow-xl dark:border-gray-800 dark:border-t-primary-500 dark:bg-gray-900 dark:text-white xl:p-8">
             <h3 class="mb-4 text-2xl font-semibold">{item.title}</h3>
             <p class="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
               {item.desc}
             </p>
             <div class="my-8 flex items-baseline justify-center">
-              <span class="mr-2 text-5xl font-extrabold">${item.price}</span>
+              <span class="mr-2 text-5xl  font-extrabold">${item.price}</span>
               {/* <span class="text-gray-500 dark:text-gray-400">/month</span> */}
             </div>
             <ul role="list" class="mb-8 space-y-4 text-left">

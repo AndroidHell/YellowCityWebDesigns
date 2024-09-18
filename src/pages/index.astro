@@ -4,9 +4,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import FeatureHead from "../components/FeatureHead.astro";
 import Expose from "../components/Expose.astro";
-import CtaBanner from "../components/CtaBanner.astro";
-
+import ClientGallery from "../components/ClientGallery.astro";
 import TechFeatures from "../components/TechFeatures.astro";
+import Pricing from "../components/Pricing.astro";
+import CtaBanner from "../components/CtaBanner.astro";
 ---
 
 <BaseLayout title="Yellow City Web Designs">
@@ -14,7 +15,13 @@ import TechFeatures from "../components/TechFeatures.astro";
   <FeatureHead />
   <Container>
     <Expose />
+    <ClientGallery />
   </Container>
-  <TechFeatures />
+  <div
+    class="bg-gradient-to-b from-white to-gray-50 pb-16 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-700"
+  >
+    <TechFeatures />
+    <Pricing />
+  </div>
   <CtaBanner />
 </BaseLayout>

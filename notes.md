@@ -18,3 +18,24 @@
   - #1f2937 gray.800 - canvas
   -
   - there are a few other grays for font but nothing super consistent, just copy what is done elsewhere
+
+### todo
+
+- change colors for header
+- add secondary etc colors
+- adjust overall colors throughout
+-
+
+### basic layout
+
+- Hero +
+- 3-4 main services +
+- About us
+- Featured service highlight +
+- Gallery
+- Featured service highlight 2
+- Extra services
+- Why choose us
+- Reviews
+- Call to action
+- Footer
