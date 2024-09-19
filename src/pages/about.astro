@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroInner from "../components/HeroInner.astro";
 import Faq from "../components/Faq.astro";
 import AboutHead from "../components/AboutHead.astro";
+import AboutMain from "../components/AboutMain.astro";
 import Pricing from "../components/Pricing.astro";
 import CtaBanner from "../components/CtaBanner.astro";
 
@@ -15,7 +16,8 @@ const image = "/hero-inner.webp";
 <BaseLayout title="About Us" description="About Us">
   <HeroInner title={title} desc={desc} image={image} />
   <Container>
-    <AboutHead />
+    <!-- <AboutHead /> -->
+    <AboutMain />
     <Pricing />
     <Faq />
   </Container>

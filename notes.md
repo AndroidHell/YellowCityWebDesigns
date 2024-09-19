@@ -21,9 +21,9 @@
 
 ### todo
 
-- change colors for header
 - add secondary etc colors
 - adjust overall colors throughout
+- redo feature section later to be more concise
 -
 
 ### basic layout
@@ -31,11 +31,11 @@
 - Hero +
 - 3-4 main services +
 - About us
-- Featured service highlight +
-- Gallery
-- Featured service highlight 2
+- Featured service highlight - redo
+- Gallery - maybe fork and only show 3?
+- Featured service highlight 2 +
 - Extra services
 - Why choose us
 - Reviews
-- Call to action
-- Footer
+- Call to action +
+- Footer +
