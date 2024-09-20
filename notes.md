@@ -32,6 +32,7 @@
 - redo services page, prob follow about head section
 - link services in footer to services page
 - anything else for home page?
+- try to have nav links highlight?
 
 ### basic layout
 
