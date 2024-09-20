@@ -28,7 +28,6 @@
 
   So like YCWD's goal is to make modern websites for people and businesses that need websites to just work. --> YCWD makes modern websites for people and businesses that need websites to just work.
 
-- add accordian for faq
 - redo services page, prob follow about head section
 - link services in footer to services page
 - anything else for home page?
