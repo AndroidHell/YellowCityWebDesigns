@@ -21,10 +21,17 @@
 
 ### todo
 
-- add secondary etc colors
-- adjust overall colors throughout
-- redo feature section later to be more concise
--
+- finish about page
+
+  - reword about ycwd and explain the name
+  - Also a general note on the writing - you have a lot of "I want to" or "I set out to" or "goal is to" but not a lot of definitive language.
+
+  So like YCWD's goal is to make modern websites for people and businesses that need websites to just work. --> YCWD makes modern websites for people and businesses that need websites to just work.
+
+- add accordian for faq
+- redo services page, prob follow about head section
+- link services in footer to services page
+- anything else for home page?
 
 ### basic layout
 
