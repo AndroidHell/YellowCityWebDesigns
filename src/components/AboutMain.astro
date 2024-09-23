@@ -1,15 +1,18 @@
 ---
 import { Image } from "astro:assets";
-import aboutCoImage from "../../public/about-co-image.webp";
-import aboutMeImage from "../../public/about-me-image.webp";
-import aboutSeoImage from "../../public/about-seo-image.webp";
-import aboutDevImage from "../../public/about-dev-image.webp";
+import aboutCoImage from "../../public/about-co.webp";
+import aboutMeImage from "../../public/about-me.webp";
+import aboutSeoImage from "../../public/about-seo.webp";
+import aboutDevImage from "../../public/about-dev.webp";
 ---
 
 <div class="max-w-screen-xl items-center px-2 py-10 md:flex">
   <div class="order-first p-10 sm:order-last md:w-1/2">
     <div class="object-center text-center">
-      <Image src={aboutCoImage} alt="illustration for about us page" />
+      <Image
+        src={aboutCoImage}
+        alt="illustration of people looking at web content"
+      />
     </div>
   </div>
   <div class="order-last p-5 sm:order-first md:w-1/2">
@@ -52,7 +55,7 @@ import aboutDevImage from "../../public/about-dev-image.webp";
 <div class="max-w-screen-xl items-center pb-12 md:flex">
   <div class="order-first p-10 sm:order-first md:w-1/2">
     <div class="object-center text-center">
-      <Image src={aboutMeImage} alt="illustration for about us page" />
+      <Image src={aboutMeImage} alt="illustration of a man working on code" />
     </div>
   </div>
   <div class="order-last p-5 sm:order-last md:w-1/2">
@@ -68,10 +71,10 @@ import aboutDevImage from "../../public/about-dev-image.webp";
       </h2>
       <div class="text-justify text-gray-700 dark:text-gray-300">
         <p>
-          My name is Derrick S., and I founded Yellow City Web Design (YCWD) in
-          2024 after leaving my software developer role. With 10 years of
-          experience spanning Information Technology, full stack development,
-          and web development, I bring a deep expertise to every project.
+          My name is Derrick Shaw., and I founded YCWD in 2024 after leaving my
+          software developer role. With 10 years of experience spanning
+          Information Technology, full stack development, and web development, I
+          bring a deep expertise to every project.
         </p>
         <p>
           I ventured into freelancing for several key reasons. First, I wanted
@@ -96,7 +99,10 @@ import aboutDevImage from "../../public/about-dev-image.webp";
 <div class="max-w-screen-xl items-center pb-12 md:flex">
   <div class="order-last p-10 sm:order-last md:w-1/2">
     <div class="object-center text-center">
-      <Image src={aboutSeoImage} alt="illustration for about us page" />
+      <Image
+        src={aboutSeoImage}
+        alt="illustration of a search engine and a woman"
+      />
     </div>
   </div>
   <div class="order-first p-5 sm:order-first md:w-1/2">
@@ -112,11 +118,11 @@ import aboutDevImage from "../../public/about-dev-image.webp";
       </h2>
       <div class="text-justify text-gray-700 dark:text-gray-300">
         <p>
-          I founded Yellow City Web Design (YCWD) with a clear focus on SEO. I
-          carefully selected a lightweight, fast framework that prioritizes SEO
-          best practices. In a web design landscape cluttered with bloated
-          WordPress plugins and quick fixes, I aim to offer a best-in-class web
-          experience without relying on excessive, resource-heavy add-ons.
+          I founded YCWD with a clear focus on SEO. I carefully selected a
+          lightweight, fast framework that prioritizes SEO best practices. In a
+          web design landscape cluttered with bloated WordPress plugins and
+          quick fixes, I aim to offer a best-in-class web experience without
+          relying on excessive, resource-heavy add-ons.
         </p>
         <p>
           At YCWD, performance, accessibility, and modern best practices are
@@ -140,7 +146,10 @@ import aboutDevImage from "../../public/about-dev-image.webp";
 <div class="max-w-screen-xl items-center pb-12 md:flex">
   <div class="order-first p-10 sm:order-first md:w-1/2">
     <div class="object-center text-center">
-      <Image src={aboutDevImage} alt="illustration for about us page" />
+      <Image
+        src={aboutDevImage}
+        alt="illustration of multiple devices with different screen sizes and a woman leaning next to them"
+      />
     </div>
   </div>
   <div class="order-last p-5 sm:order-last md:w-1/2">

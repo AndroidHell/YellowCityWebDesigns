@@ -1,28 +1,23 @@
 ---
 import Container from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroInner from "../components/HeroInner.astro";
+import PageHeader from "../components/PageHeader.astro";
+import FaqAccordian from "../components/FaqAccordian.astro";
+import ServicesMain from "../components/ServicesMain.astro";
+import Pricing from "../components/Pricing.astro";
 import CtaBanner from "../components/CtaBanner.astro";
 
 const title = "Our Services";
 const desc = "";
-const image = "/hero-inner.webp";
+const image = "/page-header-light.webp";
 ---
 
 <BaseLayout title="Services" description="Services">
-  <HeroInner title={title} desc={desc} image={image} />
+  <PageHeader title={title} desc={desc} image={image} />
   <Container>
-    <div class="text prose">
-      <span
-        class="border-b-2 border-l-2 border-primary-500 pl-1 uppercase text-gray-500 dark:text-gray-200"
-        >Services</span
-      >
-      <h2
-        class="my-4 text-3xl font-bold text-gray-600 dark:text-white sm:text-4xl"
-      >
-        New page coming <span class="text-primary-500">soon</span>
-      </h2>
-    </div>
+    <ServicesMain />
+    <Pricing />
+    <FaqAccordian />
   </Container>
   <CtaBanner />
 </BaseLayout>

@@ -1,0 +1,132 @@
+---
+import { Image } from "astro:assets";
+import servicesWebImage from "../../public/services-web.webp";
+import servicesHostingImage from "../../public/services-hosting.webp";
+import servicesSeoImage from "../../public/services-seo.webp";
+---
+
+<div id="web" class="max-w-screen-xl items-center px-2 py-10 md:flex">
+  <div class="order-first p-10 sm:order-last md:w-1/2">
+    <div class="object-center text-center">
+      <Image
+        src={servicesWebImage}
+        alt="illustration of a website on multiple screen sizes"
+      />
+    </div>
+  </div>
+  <div class="order-last p-5 sm:order-first md:w-1/2">
+    <div class="text prose">
+      <span
+        class="border-b-2 border-l-2 border-primary-500 pl-1 uppercase text-gray-500 dark:text-gray-200"
+        >YCWD</span
+      >
+      <h2
+        class="my-4 text-3xl font-bold text-gray-600 dark:text-white sm:text-4xl"
+      >
+        About <span class="text-primary-500">Web Design</span>
+      </h2>
+      <div class="text-gray-700 dark:text-gray-300">
+        <p class="text-justify">
+          Our web design service ensures that your website not only looks
+          amazing but also delivers a user-friendly experience across all
+          devices. We specialize in modern, responsive designs that are tailored
+          to meet your business needs.
+        </p>
+        <ul style="list-style-image: url('/bullet.webp');">
+          <li>Custom, responsive designs for all screen sizes</li>
+          <li>User-friendly layouts to enhance visitor engagement</li>
+          <li>
+            Clean and professional designs that reflect your brand identity
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <img
+    src="/section-break-three.webp"
+    alt="section break one"
+    class="hidden h-auto w-full max-w-xs md:block"
+  />
+</div>
+
+<div id="hosting" class="max-w-screen-xl items-center pb-12 md:flex">
+  <div class="order-first p-10 sm:order-first md:w-1/2">
+    <div class="object-center text-center">
+      <Image
+        src={servicesHostingImage}
+        alt="illustration of a person next to a web server"
+      />
+    </div>
+  </div>
+  <div class="order-last p-5 sm:order-last md:w-1/2">
+    <div class="text prose">
+      <span
+        class="border-b-2 border-l-2 border-primary-500 pl-1 uppercase text-gray-500 dark:text-gray-200"
+        >YCWD</span
+      >
+      <h2
+        class="my-4 text-3xl font-bold text-gray-600 dark:text-white sm:text-4xl"
+      >
+        About <span class="text-primary-500">Hosting and Maintance</span>
+      </h2>
+      <div class="text-gray-700 dark:text-gray-300">
+        <p class="text-justify">
+          Keep your website running smoothly with our reliable hosting and
+          ongoing maintenance services. We handle all the technical aspects, so
+          you can focus on growing your business.
+        </p>
+        <ul style="list-style-image: url('/bullet.webp');">
+          <li>Fast and secure web hosting to ensure minimal downtime</li>
+          <li>Regular updates and backups to keep your website secure</li>
+          <li>Ongoing technical support and maintenance to fix any issues</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <img
+    src="/section-break-three.webp"
+    alt="section break one"
+    class="hidden h-auto w-full max-w-xs md:block"
+  />
+</div>
+
+<div id="seo-services" class="max-w-screen-xl items-center pb-12 md:flex">
+  <div class="order-last p-10 sm:order-last md:w-1/2">
+    <div class="object-center text-center">
+      <Image src={servicesSeoImage} alt="illustration of web seach" />
+    </div>
+  </div>
+  <div class="order-first p-5 sm:order-first md:w-1/2">
+    <div class="text prose">
+      <span
+        class="border-b-2 border-l-2 border-primary-500 pl-1 uppercase text-gray-500 dark:text-gray-200"
+        >YCWD</span
+      >
+      <h2
+        class="my-4 text-3xl font-bold text-gray-600 dark:text-white sm:text-4xl"
+      >
+        About <span class="text-primary-500">SEO Optimization</span>
+      </h2>
+      <div class="text-gray-700 dark:text-gray-300">
+        <p class="text-justify">
+          Boost your online visibility with our SEO optimization services. We
+          implement strategies to help your website rank higher on search
+          engines and attract more organic traffic.
+        </p>
+        <ul style="list-style-image: url('/bullet.webp');">
+          <li>Keyword research to target your audience effectively</li>
+          <li>On-page optimization to improve search engine ranking</li>
+          <li>
+            Regular performance tracking and adjustments for continued growth
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,16 +1,16 @@
 ---
 import Containter from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroInner from "../components/HeroInner.astro";
+import PageHeader from "../components/PageHeader.astro";
 import ContactForm from "../components/ContactForm.astro";
 
 const title = "Contact Us";
 const desc = "";
-const image = "/hero-inner.webp";
+const image = "/page-header-light.webp";
 ---
 
 <BaseLayout title="Contact Us" description="Contact Us">
-  <HeroInner title={title} desc={desc} image={image} />
+  <PageHeader title={title} desc={desc} image={image} />
   <Containter>
     <ContactForm />
   </Containter>

@@ -1,17 +1,17 @@
 ---
 import Container from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroInner from "../components/HeroInner.astro";
+import PageHeader from "../components/PageHeader.astro";
 import ClientGallery from "../components/ClientGallery.astro";
 import CtaBanner from "../components/CtaBanner.astro";
 
 const title = "Our Portfolio";
 const desc = "";
-const image = "/hero-inner.webp";
+const image = "/page-header-light.webp";
 ---
 
 <BaseLayout title="Gallery" description="Gallery">
-  <HeroInner title={title} desc={desc} image={image} />
+  <PageHeader title={title} desc={desc} image={image} />
   <Container>
     <ClientGallery />
   </Container>

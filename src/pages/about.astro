@@ -1,26 +1,23 @@
 ---
 import Container from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroInner from "../components/HeroInner.astro";
+import PageHeader from "../components/PageHeader.astro";
 import FaqAccordian from "../components/FaqAccordian.astro";
-import Faq from "../components/Faq.astro";
 import AboutMain from "../components/AboutMain.astro";
 import Pricing from "../components/Pricing.astro";
 import CtaBanner from "../components/CtaBanner.astro";
 
 const title = "We Are YCWD";
 const desc = "";
-const image = "/hero-inner.webp";
+const image = "/page-header-light.webp";
 ---
 
 <BaseLayout title="About Us" description="About Us">
-  <HeroInner title={title} desc={desc} image={image} />
+  <PageHeader title={title} desc={desc} image={image} />
   <Container>
-    <!-- <AboutHead /> -->
     <AboutMain />
     <Pricing />
     <FaqAccordian />
-    <!-- <Faq /> -->
   </Container>
   <CtaBanner />
 </BaseLayout>
