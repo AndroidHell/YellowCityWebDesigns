@@ -2,7 +2,7 @@
 const { title, desc, image } = Astro.props;
 ---
 
-<div
+<section
   class="h-96 max-w-full bg-gray-500 bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply"
   style={`background-image: url('${image}')`}
   aria-labelledby="section-heading"
@@ -18,4 +18,4 @@ const { title, desc, image } = Astro.props;
       {desc}
     </p>
   </div>
-</div>
+</section>
