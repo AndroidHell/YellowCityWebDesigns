@@ -73,8 +73,8 @@ module.exports = {
       ],
     },
     backgroundImage: {
-      page_header_light: "url('page-header-light.webp')",
-      page_header_dark: "url('page-header-dark.webp')",
+      page_header_light: "url('/page-header-light.webp')",
+      page_header_dark: "url('/page-header-dark.webp')",
     },
   },
   plugins: [require("@tailwindcss/typography"), require("flowbite/plugin")],
