@@ -40,12 +40,18 @@ const { page } = Astro.props;
 const params = Astro.params;
 
 const title = `News - ${params.tag}`;
-// const desc = `Posts tagged with "${params.tag}"`;
-const image = "/hero-inner.webp";
+const desc = `Posts tagged with "${params.tag}"`;
+const lightImage = "/page-header-light.webp";
+const darkImage = "/page-header-dark.webp";
 ---
 
 <BaseLayout title={"News - " + params.tag}>
-  <PageHeader title={title} image={image} />
+  <div class="dark:hidden">
+    <PageHeader title={title} desc={desc} image={lightImage} />
+  </div>
+  <div class="hidden dark:block">
+    <PageHeader title={title} desc={desc} image={darkImage} />
+  </div>
 
   <BlogContainer>
     <div class="mt-8 grid grid-cols-1 lg:grid-cols-3">
