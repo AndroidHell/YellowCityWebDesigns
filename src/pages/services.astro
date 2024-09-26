@@ -9,17 +9,11 @@ import CtaBanner from "../components/CtaBanner.astro";
 
 const title = "Our Services";
 const desc = "";
-const lightImage = "/page-header-light.webp";
-const darkImage = "/page-header-dark.webp";
+const image = "/page-header-light.webp";
 ---
 
 <BaseLayout title="Services" description="Services">
-  <PageHeader
-    title={title}
-    desc={desc}
-    lightImage={lightImage}
-    darkImage={darkImage}
-  />
+  <PageHeader title={title} desc={desc} image={image} />
   <Container>
     <ServicesMain />
     <Pricing />
