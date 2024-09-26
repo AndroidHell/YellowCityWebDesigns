@@ -1,10 +1,10 @@
 ---
-const { title, desc, image } = Astro.props;
+const { title, desc, lightImage, darkImage } = Astro.props;
 ---
 
-<!-- <section
-  class="h-96 max-w-full bg-gray-500 bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply"
-  style={`background-image: url('${image}')`}
+<section
+  class="h-96 max-w-full bg-gray-500 bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply dark:hidden"
+  style={`background-image: url('${lightImage}')`}
   aria-labelledby="section-heading"
 >
   <div class="mx-auto max-w-screen-md px-4 py-8 sm:py-16">
@@ -18,9 +18,11 @@ const { title, desc, image } = Astro.props;
       {desc}
     </p>
   </div>
-</section> -->
+</section>
+
 <section
-  class="bg-page_header_light dark:bg-page_header_dark h-96 max-w-full bg-gray-500 bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply"
+  class="hidden h-96 max-w-full bg-gray-500 bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply dark:block"
+  style={`background-image: url('${darkImage}')`}
   aria-labelledby="section-heading"
 >
   <div class="mx-auto max-w-screen-md px-4 py-8 sm:py-16">
