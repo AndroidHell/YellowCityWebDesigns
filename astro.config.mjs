@@ -9,7 +9,4 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://yellowcityweb.dev/",
   integrations: [mdx(), sitemap(), robotsTxt(), tailwind(), icon()],
-  prefetch: {
-    prefetchAll: true,
-  },
 });
