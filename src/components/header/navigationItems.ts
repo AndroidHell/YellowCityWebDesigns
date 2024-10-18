@@ -29,13 +29,18 @@ export const navigationItems: NavItem[] = [
     icon: "gallery",
   },
   {
-    title: "Demo",
+    title: "Demos",
     path: "https://ycwd-rocinante.netlify.app/",
     icon: "demo",
     children: [
       {
         title: "Rocinante",
         path: "https://ycwd-rocinante.netlify.app/",
+        target: "_blank",
+      },
+      {
+        title: "Y Que",
+        path: "https://ycwd-yque.netlify.app/",
         target: "_blank",
       },
       {
