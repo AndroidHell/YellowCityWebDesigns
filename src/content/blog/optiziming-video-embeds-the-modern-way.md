@@ -3,7 +3,7 @@ title: Optiziming Video Embeds the Modern Way
 description: In the industry, you never stop learning. Which is great because I
   love learning new things. As I progress in my career as a web developer, I am
   always looking at ways that I can improve both[...]
-pubDate: Oct 28, 2024 10:01 AM
+pubDate: Oct 28, 2024 10:23 AM
 updatedDate: ""
 heroImage: /assets/images/undraw_video_streaming_re_v3qg.webp
 pinned: false
@@ -24,7 +24,7 @@ I ran a site speed test after I got the site up, and I'll just let the numbers s
 
 I'm not even joking. That is the screenshot I took. I was appalled when I saw this because this is just unacceptable. So, I went to work and started researching what could be done. As it so happens, the devs that work with AstroJS knew about this and sought to fix it in-house. There is an official integration for video embedding called astro-embed. This thing is amazing. It will not load any scripts at all until you click play. The video player and default image loads along with the rest of the site(bonus points to setting the loading of the video to lazy). In layman's terms, this means the site loads fast as hell, and the site will never touch Google's bundled code until you start the video. 
 
-The next morning I set out to fix this glaring issue. Not only will does site feel light and crisp now but just look at this:
+The next morning I set out to fix this glaring issue. It really didn't take any time at all. I installed the package with Node and the rest was practically plug-and-play. Not only does site feel light and crisp now but just look at this:
 
 ![performance score after optimizing](/assets/images/yque-after.webp)
 
