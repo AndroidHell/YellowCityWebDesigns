@@ -8,8 +8,7 @@ updatedDate: ""
 heroImage: /assets/images/optimizing-video.webp
 pinned: false
 ---
-
-In the industry, you never stop learning. Which is great because I love learning new things. As I progress in my career as a web developer, I am always looking at ways that I can improve both my toolbox of knowledge and the enduser experience.
+In the industry, you never stop learning. Which is great because I love learning new things. As I progress in my career as a web developer, I am always looking at ways that I can improve both my toolbox of knowledge and the enduser experience. 
 
 When I set out to pick my stack, I wanted something that is robust, modern and lightning fast. I settled on AstroJS and Tailwind because not only do I get those above qualities, but I also have a powerhouse of a framework at my disposal.
 
