@@ -1,5 +1,5 @@
 ---
-heroImage: /hello.webp
+heroImage: /assets/images/hello.webp
 badge: NEW
 pubDate: Jul 18 2024
 title: Hello, world!
