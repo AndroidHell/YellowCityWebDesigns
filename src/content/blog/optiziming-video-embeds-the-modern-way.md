@@ -5,7 +5,7 @@ description: In the industry, you never stop learning. Which is great because I
   always looking at ways that I can improve both[...]
 pubDate: Oct 29, 2024 8:22 AM
 updatedDate: ""
-heroImage: /optimizing-video.webp
+heroImage: /assets/images/optimizing-video.webp
 pinned: false
 ---
 
