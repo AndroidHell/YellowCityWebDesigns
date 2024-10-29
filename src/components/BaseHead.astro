@@ -6,7 +6,7 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description: string;
-  image?: string;
+  heroImage?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -14,8 +14,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
   title = "Yellow City Web Designs",
   description = "YCWD uses modern frameworks to deliver blazing fast web sites for your business. Located in Amarillo, Texas.",
-  image = "share-card.webp",
+  heroImage,
 } = Astro.props;
+
+const image = heroImage
+  ? new URL(heroImage, Astro.site)
+  : new URL("share-card.webp", Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -63,15 +67,13 @@ const {
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
-
+<meta property="og:image" content={image} />
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
-
+<meta property="twitter:image" content={image} />
 <!-- Dark Mode scripts -->
 <script is:inline>
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
