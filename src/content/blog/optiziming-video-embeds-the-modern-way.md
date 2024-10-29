@@ -3,9 +3,9 @@ title: Optiziming Video Embeds the Modern Way
 description: In the industry, you never stop learning. Which is great because I
   love learning new things. As I progress in my career as a web developer, I am
   always looking at ways that I can improve both[...]
-pubDate: Oct 28, 2024 10:23 AM
+pubDate: Oct 29, 2024 8:22 AM
 updatedDate: ""
-heroImage: /assets/images/undraw_video_streaming_re_v3qg.webp
+heroImage: /assets/images/hero-image.jpg
 pinned: false
 ---
 In the industry, you never stop learning. Which is great because I love learning new things. As I progress in my career as a web developer, I am always looking at ways that I can improve both my toolbox of knowledge and the enduser experience. 
