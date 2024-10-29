@@ -7,6 +7,7 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  og_img?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -15,6 +16,7 @@ const {
   title = "Yellow City Web Designs",
   description = "YCWD uses modern frameworks to deliver blazing fast web sites for your business. Located in Amarillo, Texas.",
   image = "share-card.webp",
+  og_img, // Optional property for blog post image
 } = Astro.props;
 ---
 
@@ -63,14 +65,14 @@ const {
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={new URL(og_img || image, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={new URL(og_img || image, Astro.url)} />
 
 <!-- Dark Mode scripts -->
 <script is:inline>
