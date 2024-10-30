@@ -3,20 +3,18 @@
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
 
-export interface Props {
+interface Props {
   title: string;
   description: string;
   image?: string;
-  ogType?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const {
-  title,
-  description,
+  title = "Yellow City Web Designs",
+  description = "YCWD uses modern frameworks to deliver blazing fast web sites for your business. Located in Amarillo, Texas.",
   image = "/social_img.webp",
-  ogType = "website",
 } = Astro.props;
 ---
 
@@ -61,7 +59,7 @@ const {
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content={ogType} />
+<meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
