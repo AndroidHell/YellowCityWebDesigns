@@ -3,14 +3,16 @@ import { Image } from "astro:assets";
 
 const GalleryItems = [
   {
-    title: "Walker and Sons",
-    desc: "Lawn care company owned by a father and his two sons.",
-    image: "/gallery-lawncare.png",
+    title: "Amarillo NAACP",
+    desc: "The official website for the Amarrilo NAACP branch.",
+    image: "/gallery-amarillo-naacp.webp",
+    link: "https://www.amanaacp.org/",
   },
   {
-    title: "My personal portfolio",
-    desc: "My portfolio site is hand written using AstroJS, DaisyUI, and not much else.",
-    image: "/gallery-portfolio.png",
+    title: "Amarillo FNB Recipe Book",
+    desc: "An online recipe repository for the Amarillo Food Not Bombs chapter.",
+    image: "/gallery-amarillo-fnb.webp",
+    link: "https://afnb-recipe-book.netlify.app/",
   },
   {
     title: "Fun & Gamez",
@@ -27,10 +29,12 @@ const GalleryItems = [
     desc: "A portfolio site showcasing a local photographer's work.",
     image: "/gallery-sdbphotography.png",
   },
+
   {
-    title: "Yellow City Web Design",
-    desc: "Believe it or not, we also made our own website for our website dev company.",
-    image: "/gallery-placeholder.png",
+    title: "My personal portfolio",
+    desc: "My portfolio site is hand written using AstroJS, DaisyUI, and not much else.",
+    image: "/gallery-portfolio.png",
+    link: "https://android-hell.netlify.app/",
   },
 ];
 ---
@@ -136,6 +140,31 @@ const GalleryItems = [
                 <p class=" font-normal text-gray-700 dark:text-gray-300">
                   {item.desc}
                 </p>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="ml-auto inline-flex items-center rounded-lg bg-primary-500 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:focus:ring-primary-800"
+                  >
+                    Visit Site
+                    <svg
+                      class="ml-2 h-4 w-4"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                      />
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
           </div>
